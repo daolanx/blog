@@ -79,13 +79,6 @@ const config = lang === "zh" ? zh : en
       document.addEventListener("astro:after-swap", setTheme)
       document.addEventListener("astro:page-load", setTheme)
     </script>
-
-    <script
-      is:inline
-      src="https://umami.guoqi.dev/script.js"
-      data-website-id="759e9e56-20d3-463b-8d6e-abba5c53128b"
-      data-domains="astro-air.guoqi.dev"></script>
-
     {
       config.googleAnalyticsId && (
         <GoogleAnalytics id={config.googleAnalyticsId} />
