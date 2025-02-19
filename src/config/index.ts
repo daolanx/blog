@@ -5,7 +5,7 @@ export const defaultLanguage: string = "en"
 export const common = {
   domain: "https://daolanx.me",
   meta: {
-    favicon: "/favicon.svg",
+    favicon: "/avatar.png",
     url: "https://daolanx.me",
   },
   googleAnalyticsId: "",
