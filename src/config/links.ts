@@ -6,9 +6,9 @@ export const links = [
     avatar: "/links/astro.svg",
   },
   {
-    name: "Guoqi Sun",
-    link: "https://blog.sunguoqi.com",
-    description: "Try, fail, retry. That's the rhythm of growth.",
-    avatar: "https://assets.guoqi.dev/images/avatar.png",
+    name: "daolanx",
+    link: "https://www.daolanx.me",
+    description: "",
+    avatar: "",
   },
 ]

@@ -3,22 +3,22 @@ import { Github, Twitter } from "lucide-react"
 export const defaultLanguage: string = "en"
 
 export const common = {
-  domain: "https://astro-air.guoqi.dev",
+  domain: "https://daolanx.me",
   meta: {
-    favicon: "/avatar.png",
-    url: "https://blog.sunguoqi.com",
+    favicon: "/favicon.svg",
+    url: "https://daolanx.me",
   },
   googleAnalyticsId: "",
   social: [
     {
       icon: Twitter,
       label: "X",
-      link: "https://x.com/sun0225SUN",
+      link: "https://x.com/daolanx",
     },
     {
       icon: Github,
       label: "GitHub",
-      link: "https://github.com/sun0225SUN",
+      link: "https://github.com/daolanx",
     },
   ],
   rss: true,
@@ -26,10 +26,10 @@ export const common = {
     home: true,
     archive: true,
     custom: [
-      {
-        label: "CamLife",
-        link: "https://camlife.cn",
-      },
+      // {
+      //   label: "CamLife",
+      //   link: "https://camlife.cn",
+      // },
     ],
     links: true,
     about: true,
@@ -47,20 +47,20 @@ export const common = {
 
 export const zh = {
   ...common,
-  siteName: "小孙同学",
+  siteName: "道蓝的博客",
   meta: {
     ...common.meta,
-    title: "小孙同学",
-    slogan: "一个浪漫的理性主义者",
-    description: "读书、摄影、编程、旅行",
+    title: "道蓝的博客",
+    slogan: "前端, 自由职业者新手, INFP, 感兴趣有趣或具有价值的技术",
+    description: "前端,自由职业者,INFP,技术",
   },
   navigation: {
     ...common.navigation,
     custom: [
-      {
-        label: "影集",
-        link: "https://camlife.cn",
-      },
+      // {
+      //   label: "影集",
+      //   link: "https://camlife.cn",
+      // },
     ],
   },
   pageMeta: {
@@ -69,11 +69,7 @@ export const zh = {
       description: "小孙同学的所有文章",
       ogImage: "/images/page-meta/zh/archive.png",
     },
-    links: {
-      title: "朋友们",
-      description: "小孙同学的和他朋友们",
-      ogImage: "/images/page-meta/zh/links.png",
-    },
+
     about: {
       title: "关于我",
       description: "小孙同学的自我介绍",
@@ -84,20 +80,21 @@ export const zh = {
 
 export const en = {
   ...common,
-  siteName: "Guoqi Sun",
+  siteName: "Daolanx’s Blog",
   meta: {
     ...common.meta,
-    title: "Guoqi Sun",
-    slogan: "A Romantic Rationalist",
-    description: "Reading, Photography, Programming, Traveling",
+    title: "Daolanx’s blog",
+    slogan:
+      "f2e, freelance rookie, infp, intrigued by technology that is either fascinating or of significant value.",
+    description: "f2e, freelance, infp, technology.",
   },
   navigation: {
     ...common.navigation,
     custom: [
-      {
-        label: "CamLife",
-        link: "https://camlife.cn",
-      },
+      // {
+      //   label: "CamLife",
+      //   link: "https://camlife.cn",
+      // },
     ],
   },
   pageMeta: {
@@ -106,11 +103,7 @@ export const en = {
       description: "Here are Guoqi Sun's all posts",
       ogImage: "/images/page-meta/en/archive.png",
     },
-    links: {
-      title: "My Friends",
-      description: "Here are Guoqi Sun's friends",
-      ogImage: "/images/page-meta/en/links.png",
-    },
+
     about: {
       title: "About Me",
       description: "Here is Guoqi Sun's self-introduction",

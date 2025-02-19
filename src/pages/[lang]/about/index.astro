@@ -21,7 +21,12 @@ const AboutContent = lang === "zh" ? AboutContentZh : AboutContentEn
   ogImage={pageMeta.about.ogImage}
   needComment={true}
 >
-  <div class="prose max-w-3xl dark:prose-invert">
+  <div class="prose dark:prose-invert max-w-3xl">
     <AboutContent />
   </div>
+  <img
+    class="mx-auto h-60 opacity-70 dark:invert"
+    src="/images/page-meta/wall-e.png"
+    alt="logo"
+  />
 </MainLayout>

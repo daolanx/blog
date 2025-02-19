@@ -1,25 +1,74 @@
 ---
-title: "My First Blog Post"
-pubDate: 2020-07-01
-description: "This is the first post of my new Astro blog."
-ogImage: "https://sunguoqi.com/me.png"
-author: "Astro Learner"
-image:
-  url: "https://docs.astro.build/assets/rose.webp"
-  alt: "The Astro logo on a dark background with a pink glow."
-tags: ["astro", "blogging", "learning-in-public"]
+title: "Farewell Ant, Boundless Sea And Sky"
+pubDate: 2024-06-14
+updatedDate: 2024-06-14
+description: ""
+author: "daolanx"
+tags: ["Musings", "Ant"]
 ---
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+In June 2024, I left Ant Group, exactly ten years after joining in June 2014. Prior to that, I worked for three years in the Taobao Kariqu project team from March 2011 to June 2024, adding up to thirteen years at Alibaba.
 
-## What I've accomplished
+After my internship at Baidu's commercial products division, my first formal job was at NetEase in Beijing, working on e-commerce projects. Back then, I received a call from Xiao Ma, asking if I was interested in opportunities at Taobao in Hangzhou, where they had the "best UED on the planet." As a newbie, I couldn't resist such a vision and felt like I was on a pilgrimage to Hangzhou for the interview. During those days, Hangzhou was covered in heavy snow, adding a sense of ceremony to the experience. Due to my lack of experience, I didn't pass the interview for Taobao's front-end team. However, during interviews with other departments, I thought I would return empty-handed, but coincidentally, Taobao was working on an innovative project called Kariqu, which was hiring front-end developers. I remember my second interview was with Teacher Yun Qian, who was very humble, and the project leader was full of energy. Thanks to their trust, I was fortunate to pass the interview.
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+## The Kariqu Project Team: The Grassroots Entrepreneurial Spirit I Never Saw Again
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+Kariqu is the source of the Yellow River, and the project team was named after it, which also related to their focus on internet traffic, a time when traffic portals were king. The team worked on products like Tao URL, Tao Video, and Mobile Manager, some of which ranked among the top in China.
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+More than the products, what left a deeper impression was the team. We worked in a small, cramped room with product managers, operations, developers, designers, and testers, all collaborating on products, analyzing data, and reviewing feedback. I was honored when Ma Yun visited, showing great interest in our products. The team leader communicated brilliantly with him, presenting data metrics flawlessly, clearly well-prepared.
 
-## What's next
+While the products grew, our promotions were less optimistic. Due to professional evaluations, we often failed to get promoted, leading to sighs and complaints about the judges not understanding the products. The architect even joked that we were "mud-legged." Despite the jokes, the team had a harmonious relationship, and the rapid development of the internet filled everyone with confidence, hope, and tolerance.
 
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+Looking back, although I didn't grow much technically in the Kariqu team, the most valuable takeaway was that grassroots entrepreneurial spirit. In later teams, even if they were larger and more professional, I never saw that same passion for products and users again.
+
+Later, due to departmental changes, a new design lead was brought in. I felt they weren't up to par, and I was asked to create demos—basically spending a week on something the boss would glance at for a few seconds. I wanted to work on real products, so when Alipay was hiring front-end developers, I decided to transfer. Thanks to Yu Bo's trust, I joined the Experience Technology Department.
+
+## Ant Experience Technology, The Palace Of Academics
+
+At that time, I joined the Basic Products Department, mainly website-related business. At that time, Su Qian and the others promoted the transformation of Node.js on the Alipay homepage and were fortunate to join in the development. At that time, I was going to release the official website and found that I had to go to 30+ small platforms to complete the development and release. They were all shocked. Later, I planned front-end engineering transformation, and based on my trust, I became the main development of the front-end R&D of Swift, which became Ant's earliest front-end R&D platform. At that time, our first and second phases were quite effective and we won many awards.
+
+I felt very awesome at the time, but now I think it is actually like this. Maybe at that stage, the Internet was developing rapidly and had strong demands for related products. The strong demand for products and slow R&D efficiency became the main contradiction, and Ant was originally Mainly finance and Java, the R&D efficiency of the front-end is obviously insufficient, and there is room for existence, which constitutes the basic space and value of the front-end R&D platform. Then in terms of team structure, based on Zhen'er's understanding of the team, his colleagues are very diverse. Although everyone is on the front-end title, there are actually big differences. Some of them can write Java, chat about Kafka and election algorithms every day. DDD and congestion models, some use go to write docker and build services, and some write more publicity, which overall constitutes a relatively comprehensive team capability, which is also because of management belief and let go. Although everyone has many different abilities, they have cooperation. It can really complement each other and pursue simplicity in the ultimate pursuit, so there is a good push in product development and execution, and it is pragmatic and simple. The quality of product development has been guaranteed, and the design has also changed the style of Ant Financial's multiple card points and multiple points. It has learned from Kenya Hara's minimalist design, and has tried its best to provide services in a scenario-based manner, and has a simple and stable service to developers. It will do it during that period A sense of difference. At that time, Swift's architectural technology and promotion also received a lot of support. Although I was responsible for the main front-end development during that period, I now think of Frodo, who looks more like myself and the Lord of the Rings, actually wizards, elves, and dwarves on the way. He is amazing. Although he finally escorted the Lord of the Rings, it would be impossible to complete without their help.
+
+There is also a layer of trend interpretation and vision from Zhen'er. One is the interpretation of trend devops. It is in line with the development trend, and the other is the vision. At that time, she felt that Ant front-end engineers were originally very aura and creative, and she had seen many people come to Alipay after seeing her. It was all gone. She hoped to build a platform to liberate and exert the creativity of front-end engineers. The platform at that time could also allow front-end students to create and call many BAAS services. Although it seemed a bit radical at the time, this design was really full of Highlights. Many years later, I looked at Vercel's familiar design and felt complicated.
+
+At that time, I was also lucky to work with many big guys and listen to and share. For example, Mr. Ruan Yifeng also briefly participated in the project development, and there were also migrant workers promoting rxjs, Zhou Aimin spoke js language, and there were many Su Qian, Bu Si, Guan Gao, Shen Yu, Ping Right, Yun Qian and other great people. Please tell me why Gao P can insist on writing code. The answer is very simple. I think it is valuable and continue to do it. Please tell me how to make a good design architecture. The answer is mainly to pay attention to code quality, testing, and cr. The free plan asked him questions in exchange for warm thanks for your support. Really humble to the core. There are also some visual research that originally knows nothing about SQL. Based on their research attitude towards technology, they can still complete the design of the SQL engine in a short period of time, which is really different. I think it is obvious trait of a big guy to maintain humility and study, and to pursue technology endlessly.
+
+The financial core support in the later period. Although the support range is relatively wide, it seems that it is still academic. One is its own support method, or the awareness of experience technology to support the product front-end. The thinking and method are still the same trick of experience technology. , and did not fully interpret the product to do things that are more beneficial to the product. Most of them are still paying attention to the implementation and transformation of technical solutions. One is that the product itself may not be a real scenario, especially some technical middle platforms, which may be difficult to capture real demands, which is different from the feeling of commercial products outside.
+
+There is something I remember deeply. At the dinner table, the head of the financial core R&D joked that you were relatively simple in front of you. I was not convinced at the time, what was simple in that way? Now I think about it hahaha he was right. I always want to treat business as a technology implementation scenario, but it is all about scholarly spirit.
+
+Later, OceanBase is about to establish an independent subsidiary. At that time, it happened to be the core of finance. Because of the method and the result, I performed 325 (the reason was that others were developing rapidly, and I was standing still, and standing still was regressing). Yushu asked me if I was willing to go. OceanBase, there needs to be full-time participation and support, thanks for trust. After thinking for a few days, I joined OceanBase and worked hard to promote new business directions.
+
+## OceanBase, My Graduation Ceremony
+
+In the first year, it was really like a wisp of thin ice. In June 2020, OceanBase established an independent company and its products began to develop rapidly. On the one hand, we are happy with the development of the business, on the other hand, at this time we only have 2 front-end + 3 outsourcing, and the front-end performance is facing great challenges. So like a knight, I participated in the development of various urgently needed front-end products according to my priorities, while paying attention to recruitment and teams. Finally, with the help of myself and the experience technology team, I completed the front-end formation of 5 front-end + 14 outsourcing. At that time, the supervisor's evaluation was based on a sense of responsibility and an overall view. Yes, in fact, many things may actually be inconsistent with personal interests, but I am willing to choose to pay.
+
+Later, with the development of the cloud business, I just stayed in the cloud business, from project governance, to product flexibility, to scale, bit by bit to assist in product formation and development. It also put a lot of time and energy into the formation of the front-end 10+ team of Numa.
+
+The technical solution was mainly the formation of the database console business component library. At that time, the environment was faced with scattered requirements, PD was often changed, the back-end interface was inconsistent, and the front-end console had been repeated many sets. My interpretation is that demand is a kind of resource, and scenarios are also a kind of resource. If it is not used, it will become a low cost, but rational use is the benefit. A large number of needs can definitely converge to some capabilities and solutions. Multiple scenarios can just do the plan polishing, stable and consistent components can also reduce project costs, forThe subsequent back-end interface provides a consistent reference and provides some support for subsequent open source. So although it looks mediocre, in fact, I have already changed. Instead of setting a template or making a plan for promotion, I am thinking about how to make more effective solutions, solve practical problems, and find the best solution for myself and the surrounding teams. Is there a solution that can solve product problems, but also conducive to the development of the cooperative team, and also conducive to the improvement of the technical team's own professionalism? Technology is not single. It must play a role in a time and space. It is necessary to see that it is in the development space of people and things to find the optimal solution.
+
+In fact, you will also find in the process that although the database and console are very unfamiliar scenarios, the ToB scenario has its own rules, and the requirements will teach you. At that time, in the console field, it can be basically adapted to different product specifications, and there are corresponding white-screen solutions for operation and maintenance, monitoring, and diagnosis.Although it is not refined enough, there are scenes with scale, and if the plan is polished, I think it will still make the professionalism of this scene. In the process, you can even feel the law and joy of the development and evolution of the ToB functional product tree, a kind of joy of realization in the sense of regularity and thorough interpretation.
+
+Doing technology in the product team, the most important thing is that I think it is result-oriented effectiveness. At that time, a startup CTO happened to listen to the front-end sharing of a major manufacturer. He said, everyone sitting here is a front-end bull. I really benefited a lot from listening to it, but I'm also honest. If a startup uses your plan, it may die and it will die quickly. Indeed, I also checked some of the company's internal technologies later. Many of them I think are very promising, but many may be solving some internal problems. The market and commercialization may not be flexible. Of course, it's not that I don't pay attention to technology. The example I am very impressed with comes from the early days of Apple Computers. Apple computer users never looked at the inside, but in fact, their internal cable design is very neat, and they got up early and signed the engineer's name. I believe that technology is still a service method rather than the purpose itself, and products and services are important. However, the technology behind good products and services must not be bad. Technology will be more professional and extreme because of the services provided. In the commercialization period, we are actually thinking about many technologies within ants. We are also thinking about whether they are really suitable for commercial products, because the main genes at the front end of ants are also in the back end, and the commercialization technology in the market has long been different. However, based on development and dependence, this promotion will be relatively slow, and this proposition may require more and more attention.
+
+Just as many movies have ups and downs, art also comes from life. It is difficult for people to change their environment many times, and they don't have to reason with unreasonable people. So in the choice between leaving and staying as an IC, I chose to leave. Things in the world are inherently complicated, and many things cannot be measured by fairness, and the operation of the world is not transferred by individuals. When you understand this, you may be more mature.
+
+Almost everyone was surprised when I left and didn't believe it, but that's it. Someone asked if it was a pity to leave after more than ten years of work, but I don't think so. The ant in my heart is still the ant that has brought small and beautiful changes to the world, and the pragmatic and simple ant in my heart. If an environment is not like this anymore, then it may not be an ant. I think my departure is actually a kind of return. Some people say that your management was actually very good before, but I said that now you don't think it's a matter of management level, it's driven by responsibility. Now that the burden has finally been removed, and it is light without responsibility.
+
+## Goodbye, 10 Years Of Ant, 3 Years Of Taobao, 13 Years Of Ali
+
+Later, on the resignation box, it was really this paragraph,
+
+"Running to the Mountains and Seas"
+
+"Making a small but beautiful difference in the world"
+
+I still have the tree species of the Ant Forest at that time, and I also keep the Su Dongpo version of the ant doll. I find them very gracious.
+
+![ant-family](/images/posts/ant-family.jpeg)
+
+The end of one story is the beginning of another.
+
+Goodbye Ant, Goodbye Ali!
+
+Hello, Future!
