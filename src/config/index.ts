@@ -8,7 +8,7 @@ export const common = {
     favicon: "/avatar.png",
     url: "https://daolanx.me",
   },
-  googleAnalyticsId: "G-GK38PC0XKB",
+  googleAnalyticsId: "G-YDEKLKLZVC",
   social: [
     {
       icon: Twitter,
