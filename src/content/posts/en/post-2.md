@@ -14,21 +14,21 @@ tags: ["esp32", "elink", "ai"]
 
   <div >
 
-![ai-calendar-front](/images/posts/ai-calendar-front.jpg)
+![ai-calendar-front](/images/posts/2/ai-calendar-front.jpg)
 
 </div>
 
 <div>
 
-![ai-calendar-back](/images/posts/ai-calendar-back.jpg)
+![ai-calendar-back](/images/posts/2/ai-calendar-back.jpg)
 
 </div>
 
 </div >
 
-![ai-calendar-screenshots](/images/posts/ai-calendar-screenshots.png)
+![ai-calendar-screenshots](/images/posts/2/ai-calendar-screenshots.png)
 
-![ai-calendar-components](/images/posts/ai-calendar-componets.jpg)
+![ai-calendar-components](/images/posts/2/ai-calendar-componets.jpg)
 
 # Origin
 

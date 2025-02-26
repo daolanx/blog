@@ -65,7 +65,7 @@ tags: ["碎语", "蚂蚁"]
 
 我还存着当时蚂蚁森林的树种，我也保留了苏东坡版本的蚂蚁公仔。我觉得它们很亲切。
 
-![ant-family](/images/posts/ant-family.jpeg)
+![ant-family](/images/posts/1/ant-family.jpeg)
 
 “桂棹兮兰桨，击空明兮溯流光。渺渺兮予怀，望美人兮天一方”
 

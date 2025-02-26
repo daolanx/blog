@@ -65,7 +65,7 @@ Later, on the resignation box, it was really this paragraph,
 
 I still have the tree species of the Ant Forest at that time, and I also keep the Su Dongpo version of the ant doll. I find them very gracious.
 
-![ant-family](/images/posts/ant-family.jpeg)
+![ant-family](/images/posts/1/ant-family.jpeg)
 
 The end of one story is the beginning of another.
 
