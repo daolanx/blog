@@ -9,8 +9,10 @@ const { home, archive, custom, links, about } =
   lang === "zh" ? zh.navigation : en.navigation
 ---
 
-<div
+<nav
   class="mt-4 mb-10 flex gap-4 overflow-x-auto text-lg whitespace-nowrap [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+  role="navigation"
+  aria-label="Main navigation"
 >
   {
     home && (
@@ -20,8 +22,9 @@ const { home, archive, custom, links, about } =
         aria-label={t("nav.home")}
         title={t("nav.home")}
         data-astro-prefetch="viewport"
+        rel="home"
       >
-        <p>{t("nav.home")}</p>
+        {t("nav.home")}
       </a>
     )
   }
@@ -34,7 +37,7 @@ const { home, archive, custom, links, about } =
         title={t("nav.archive")}
         data-astro-prefetch="viewport"
       >
-        <p>{t("nav.archive")}</p>
+        {t("nav.archive")}
       </a>
     )
   }
@@ -48,8 +51,8 @@ const { home, archive, custom, links, about } =
         title={t("nav.about")}
         data-astro-prefetch="viewport"
       >
-        <p>{t("nav.about")}</p>
+        {t("nav.about")}
       </a>
     )
   }
-</div>
+</nav>

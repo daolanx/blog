@@ -10,8 +10,12 @@ const config = lang === "zh" ? zh : en
 ---
 
 <header class="flex h-24 w-full items-center justify-between">
-  <a href="/" aria-label={`${config.siteName}`}>
-    <div class="text-2xl font-semibold">{config.siteName}</div>
+  <a
+    href={`/${lang}`}
+    class="hover:text-primary text-2xl font-semibold transition-colors"
+    title={config.siteName}
+  >
+    <h1>{config.siteName}</h1>
   </a>
 
   <div class="flex items-center gap-6">

@@ -1,6 +1,13 @@
 ---
 interface Props {
-  post: any
+  post: {
+    id: string
+    data: {
+      title: string
+      pubDate: Date
+      description?: string
+    }
+  }
   lang: string
   dateFormat?: string
   dateWidth?: string
@@ -10,14 +17,24 @@ const { post, lang, dateFormat = "default", dateWidth = "w-36" } = Astro.props
 import { formatDate } from "~/utils"
 ---
 
-<a
-  href={`/${lang}/posts/${post.id}/`}
-  class="my-3 flex visited:text-purple-500/90 md:my-2"
->
-  <p
-    class={`flex ${dateWidth} flex-shrink-0 truncate text-gray-500 dark:text-gray-400`}
+<article class="my-3 md:my-2">
+  <a
+    href={`/${lang}/posts/${post.id}/`}
+    class="flex visited:text-purple-500/90"
+    title={post.data.title}
+    aria-label={`Read post: ${post.data.title}`}
+    data-astro-prefetch="viewport"
   >
-    <time>{formatDate(post.data.pubDate, dateFormat)}</time>
-  </p>
-  <p class="line-clamp-2 text-lg hover:underline">{post.data.title}</p>
-</a>
+    <p
+      class={`flex ${dateWidth} flex-shrink-0 truncate text-gray-500 dark:text-gray-400`}
+    >
+      <time datetime={post.data.pubDate.toISOString()}>
+        {formatDate(post.data.pubDate, dateFormat)}
+      </time>
+    </p>
+    <h2 class="line-clamp-2 text-lg hover:underline">
+      {post.data.title}
+    </h2>
+  </a>
+  {post.data.description && <p class="sr-only">{post.data.description}</p>}
+</article>
