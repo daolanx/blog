@@ -3,7 +3,7 @@ title: "2024 H2: Job Hunt, Indie Dev, Invest, And Babysitting"
 pubDate: 2025-01-28
 updatedDate: 2025-01-28
 description: ""
-author: "daolanx"
+author: "Dax"
 tags: ["2024 H2", "Job Hunt", "Indie Dev", "Invest", "Babysitting"]
 ---
 

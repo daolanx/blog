@@ -3,7 +3,7 @@ title: "Deploy SiYuan Notes on Synology NAS + External HTTPS Access via Cloudfla
 pubDate: 2024-10-29
 updatedDate: 2024-10-29
 description: ""
-author: "daolanx"
+author: "Dax"
 tags: ["synology", "NAS", "Cloudflare", "SiYuan"]
 ---
 

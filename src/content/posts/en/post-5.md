@@ -2,7 +2,7 @@
 title: What Parenting Taught Me
 pubDate: 2025-08-18
 updatedDate: 2025-08-18
-author: "daolanx"
+author: "Dax"
 tags:
   [
     "Stay-at-Home Dad",
@@ -23,17 +23,7 @@ Stepping away from work these past six months has allowed me to think more deepl
 
 ### 1. The Most Fundamental Thing: Rebuilding Family's Emotional Foundation. Home is Where the Heart Is
 
-title: What Parenting Taught Me pubDate: 2025-08-18 updatedDate: 2025-08-18 author: "Daolanx" tags: ["Stay-at-Home Dad", "Family", "The Ultimate Question", "My Investment Journey"] description: ""
-Another half a year has passed, and after a few family twists and turns, I am now a full-fledged stay-at-home dad, in charge of meals, daily routines, and figuring out how to make money. The most important thing on my mind right now is waiting for my child to start kindergarten in a month.
-
-I used to think that parenting was a hard and tedious job, but it turns out I've learned so much.
-
-Maybe an outsider sees more clearly. Before, almost everything I did revolved around work, and I subconsciously viewed everything else as a distraction or an afterthought. Then I read some books that had a specific, biting critique for this: they call it being a workaholic, sacrificing your time and life to become a machine for work. What's more ironic is that this state isn't born from a passion for work, but from a place of escape and fear.
-
-Stepping away from work these past six months has allowed me to think more deeply. This article has been written on and off for a long time. My thoughts are a jumble, and my writing skills are limited, but I still want to put it down as a record of what I've gained during this time.
-
-1. The Most Fundamental Thing: Rebuilding Family's Emotional Foundation. Home is Where the Heart Is
-   The foundation of a home is emotional and spiritual connection. To form a family, the most important thing is the spiritual bond—at a minimum, mutual trust and support. Even better, mutual appreciation and helping each other grow. These spiritual elements give you a sense of purpose and belonging when you're tired and facing difficulties. A basic sign of a home is a place that feels safe and secure, and people who are warm and kind.
+The foundation of a home is emotional and spiritual connection. To form a family, the most important thing is the spiritual bond—at a minimum, mutual trust and support. Even better, mutual appreciation and helping each other grow. These spiritual elements give you a sense of purpose and belonging when you're tired and facing difficulties. A basic sign of a home is a place that feels safe and secure, and people who are warm and kind.
 
 Conversely, if family members constantly fight, attack, and tear each other down, there is no spiritual foundation for a home. Even with great material support, it's just an empty shell that can easily fall apart. It's a shame, but principles are just principles; you only truly understand them through experience.
 

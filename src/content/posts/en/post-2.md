@@ -3,7 +3,7 @@ title: "ESP32 and AI-Powered Personalized Calendar with E-ink Display"
 pubDate: 2024-10-14
 updatedDate: 2024-10-14
 description: ""
-author: "daolanx"
+author: "Dax"
 tags: ["esp32", "elink", "ai"]
 ---
 

@@ -6,7 +6,7 @@ export const links = [
     avatar: "/links/astro.svg",
   },
   {
-    name: "daolanx",
+    name: "Dax",
     link: "https://www.daolanx.me",
     description: "",
     avatar: "",

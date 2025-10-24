@@ -80,10 +80,10 @@ export const zh = {
 
 export const en = {
   ...common,
-  siteName: "Daolanx’s Blog",
+  siteName: "Dax's Blog",
   meta: {
     ...common.meta,
-    title: "Daolanx’s blog",
+    title: "Dax's blog",
     slogan:
       "f2e, freelance rookie, infp, intrigued by technology that is either fascinating or of significant value.",
     description: "f2e, freelance, infp, technology.",

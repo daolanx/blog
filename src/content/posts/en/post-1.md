@@ -3,7 +3,7 @@ title: "Farewell Ant, Boundless Sea And Sky"
 pubDate: 2024-06-14
 updatedDate: 2024-06-14
 description: ""
-author: "daolanx"
+author: "Dax"
 tags: ["Musings", "Ant"]
 ---
 
