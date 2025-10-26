@@ -23,9 +23,6 @@ However, forgetting is not losing. Those experiences and abilities will drift aw
 
 ### 3. Cultivating Metacognition
 
-当然，这是对您提供的博客内容的翻译：
-
-III. Cultivating Metacognition
 To set everything aside and start anew, the first step is to correct the fundamental concepts and understanding of things.
 
 By using good books as a reference for thinking, you should question the cognitions you have established about work and life, and identify those incorrect ones. For example, the notions that work can make you money, that diligence is necessary for doing things, or that learning simply means memorizing answers for exams, are all wildly wrong. In reality, work often can't make you truly rich; instead, it offers a relatively low leverage ratio. True financial freedom is about freedom of time and choice. More importantly, doing things is about doing the right things, not just being diligent. Learning primarily aims to cultivate thinking and analysis skills, not to remember standard answers.
