@@ -15,9 +15,11 @@ Putting down everything, important or otherwise, slowing down, and returning to 
 
 ### 2. Forgetting the Past
 
-Only an extremely slow passage of time can wash away the behaviors and mindsets from past work and life.
+With the extremely slow passage of time, one should forget the behaviors and thoughts from past work and life. Such changes can only occur within a deeply purified mind. Just as in Jin Yong's novels, to learn Tai Chi, one must first forget; only by forgetting can one truly learn, and only an empty cup can hold water.
 
-These changes demand a deeply pure state of mind to occur. Just as in Jin Yong's novels, to learn Tai Chi, one must first forget. Only by forgetting can one truly learn; only an empty cup can hold water.
+Forget your previous routine, forget emotions, forget labels, forget abilities, forget everything.
+
+However, forgetting is not losing. Those experiences and abilities will drift away because they are freed from their previous pull, and then, through new understanding, they will reaggregate in a new form.
 
 ### 3. Cultivating Metacognition
 
