@@ -1,6 +1,5 @@
 ---
 import { render } from "astro:content"
-import Comments from "~/components/astro/comments.astro"
 import { langs } from "~/i18n/ui"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
@@ -80,8 +79,4 @@ const structuredData = {
       }
     </footer>
   </article>
-
-  <div class="my-10">
-    <Comments />
-  </div>
 </MainLayout>
