@@ -44,7 +44,7 @@ Search and install Container Manager package in Package Center. Under this packa
 
 ### 3.3 Launch SiYuan Container
 
-因为 Container Manager 界面安装的执行命令输入框总提交报错，在这里我还是改用命令行更清晰。在 ssh admin 账户下操作，注意 accessAuthCode 的 xxx 需要改为自己定义的授权码，将会作为思源的登录密码：
+Due to persistent submission errors with the execution command input field in the Container Manager interface used for installation, I will switch to the command line for better clarity. Execute the following under the ssh admin account. Note that the 'xxx' in accessAuthCode must be replaced with your custom authorization code, which will be used as the Siyuan login password:
 
 ```bash
 sudo -i # switch to root account
