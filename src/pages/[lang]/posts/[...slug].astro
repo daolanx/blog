@@ -43,6 +43,7 @@ const structuredData = {
 
 <MainLayout {...post.data}>
   <script
+    is:inline
     type="application/ld+json"
     set:html={JSON.stringify(structuredData)}
   />
@@ -59,17 +60,17 @@ const structuredData = {
       <time
         datetime={post.data.pubDate}
         itemprop="datePublished"
-        class="my-3 text-gray-500 dark:text-white/80"
+        class="my-3 text-gray-700 dark:text-white/80"
       >
         {formatDate(post.data.pubDate)}
       </time>
     </header>
 
-    <div class="my-6" itemprop="articleBody">
+    <main class="my-6" itemprop="articleBody">
       <Content />
-    </div>
+    </main>
 
-    <footer class="space-x-3 pb-10 text-sm text-gray-500">
+    <aside class="space-x-3 pb-10 text-sm text-gray-500">
       {
         post.data.tags.map((tag: string) => (
           <a href={`/${lang}/tags/${tag}`} class="no-underline" rel="tag">
@@ -77,6 +78,6 @@ const structuredData = {
           </a>
         ))
       }
-    </footer>
+    </aside>
   </article>
 </MainLayout>

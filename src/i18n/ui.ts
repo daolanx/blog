@@ -9,6 +9,7 @@ export const langs = ["en", "zh"]
 
 export const ui = {
   en: {
+    "author.name": "Dax",
     "nav.home": "Home",
     "nav.archive": "Archive",
     "nav.about": "About",
@@ -20,6 +21,7 @@ export const ui = {
     "tag.no_posts": "No posts found for tag",
   },
   zh: {
+    "author.name": "道蓝",
     "nav.home": "首页",
     "nav.about": "关于",
     "nav.archive": "归档",

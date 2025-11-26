@@ -1,0 +1,40 @@
+---
+interface Props {
+  post: {
+    id: string
+    data: {
+      title: string
+      pubDate: Date
+      description?: string
+    }
+  }
+  lang: string
+  dateFormat?: string
+  dateWidth?: string
+}
+
+const { post, lang, dateFormat = "default" } = Astro.props
+import { formatDate } from "~/utils"
+---
+
+<article
+  class="align-center my-3 flex w-full flex-row-reverse items-baseline justify-end gap-x-6 md:my-2"
+>
+  <h3 class="text-lg overflow-ellipsis whitespace-nowrap hover:underline">
+    <a
+      href={`/${lang}/posts/${post.id}/`}
+      class="visited:text-purple-500/90"
+      title={post.data.title}
+      aria-label={`Read post: ${post.data.title}`}
+      data-astro-prefetch="viewport"
+    >
+      {post.data.title}
+    </a>
+  </h3>
+  <time
+    class="shrink-0 text-gray-700 dark:text-white/80"
+    datetime={post.data.pubDate.toISOString()}
+  >
+    {formatDate(post.data.pubDate, dateFormat)}
+  </time>
+</article>

@@ -1,4 +1,5 @@
 ---
+import Footer from "~/components/astro/footer.astro"
 import Header from "~/components/astro/header.astro"
 import Navigation from "~/components/astro/nav.astro"
 import BaseLayout from "~/layouts/base.astro"
@@ -9,9 +10,12 @@ const openGraphImage = !ogImage ? `/og/${filename}.png` : ogImage
 ---
 
 <BaseLayout title={title} description={description} ogImage={openGraphImage}>
-  <main class="max-auto mb-10 w-full max-w-3xl">
-    <Header />
-    <Navigation />
+  <Header />
+  <Navigation />
+  <main class="mx-auto">
     <slot />
   </main>
+  <Footer />
+
+  <!-- <main class="max-auto mb-10 w-full max-w-3xl"></main> -->
 </BaseLayout>

@@ -1,5 +1,5 @@
 ---
-import PostList from "~/components/astro/post-list.astro"
+import PostItem from "~/components/astro/post-item.astro"
 import { en, zh } from "~/config"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
@@ -37,17 +37,16 @@ const years = Object.keys(postsByYear).sort((a, b) => Number(b) - Number(a))
 >
   {
     years.map((year) => (
-      <div class="year-group my-8">
+      <section class="year-group my-8">
         <h2 class="my-4 text-2xl font-bold">{year}</h2>
-        {postsByYear[year].map((post: any) => (
-          <PostList
-            post={post}
-            lang={lang}
-            dateFormat="MM-DD"
-            dateWidth="w-20"
-          />
-        ))}
-      </div>
+        <ul>
+          {postsByYear[year].map((post: any) => (
+            <li>
+              <PostItem post={post} lang={lang} dateFormat="MM-DD" />
+            </li>
+          ))}
+        </ul>
+      </section>
     ))
   }
 </MainLayout>

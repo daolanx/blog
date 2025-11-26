@@ -1,7 +1,7 @@
 ---
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
-import PostList from "./post-list.astro"
+import PostItem from "./post-item.astro"
 
 interface Props {
   posts: any[]
@@ -23,12 +23,7 @@ const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
     filteredPosts.length > 0 ? (
       <ul class="space-y-4">
         {filteredPosts.map((post: any) => (
-          <PostList
-            post={post}
-            lang={lang}
-            dateFormat="YYYY-MM-DD"
-            dateWidth="w-32"
-          />
+          <PostItem post={post} lang={lang} dateFormat="YYYY-MM-DD" />
         ))}
       </ul>
     ) : (

@@ -43,8 +43,8 @@ export const zh = {
   meta: {
     ...common.meta,
     title: "道蓝的博客",
-    slogan: "前端, 自由职业者新手, INFP, 感兴趣有趣或具有价值的技术",
-    description: "前端,自由职业者,INFP,技术",
+    slogan: "记录从前端，到全栈和独立开发的进阶之路",
+    description: "记录从前端，到全栈和独立开发的进阶之路",
   },
   navigation: {
     ...common.navigation,
@@ -58,13 +58,13 @@ export const zh = {
   pageMeta: {
     archive: {
       title: "归档",
-      description: "小孙同学的所有文章",
+      description: "道蓝的所有文章",
       ogImage: "/images/page-meta/zh/archive.png",
     },
 
     about: {
       title: "关于我",
-      description: "小孙同学的自我介绍",
+      description: "道蓝的自我介绍",
       ogImage: "/images/page-meta/zh/about.png",
     },
   },
@@ -75,10 +75,11 @@ export const en = {
   siteName: "Dax's Blog",
   meta: {
     ...common.meta,
-    title: "Dax's blog",
+    title: "Dax's Blog",
     slogan:
-      "f2e, freelance rookie, infp, intrigued by technology that is either fascinating or of significant value.",
-    description: "f2e, freelance, infp, technology.",
+      "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
+    description:
+      "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
   },
   navigation: {
     ...common.navigation,
@@ -92,13 +93,13 @@ export const en = {
   pageMeta: {
     archive: {
       title: "All Posts",
-      description: "Here are Guoqi Sun's all posts",
+      description: "Here are Dax's all posts",
       ogImage: "/images/page-meta/en/archive.png",
     },
 
     about: {
       title: "About Me",
-      description: "Here is Guoqi Sun's self-introduction",
+      description: "Here is Dax's self-introduction",
       ogImage: "/images/page-meta/en/about.png",
     },
   },
