@@ -43,7 +43,8 @@ export const zh = {
   meta: {
     ...common.meta,
     title: "道蓝的博客",
-    slogan: "记录从前端，到全栈和独立开发的进阶之路",
+    keywords: "前端,全栈,独立开发",
+    slogan: "前端，全栈，独立开发进阶之路",
     description: "记录从前端，到全栈和独立开发的进阶之路",
   },
   navigation: {
@@ -75,9 +76,9 @@ export const en = {
   siteName: "Dax's Blog",
   meta: {
     ...common.meta,
+    keywords: "F2E,Full-Stack,Indie Hacker",
     title: "Dax's Blog",
-    slogan:
-      "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
+    slogan: "From F2E, Full-Stack To Indie Hacker.",
     description:
       "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
   },

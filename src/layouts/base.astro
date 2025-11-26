@@ -21,6 +21,7 @@ const config = lang === "zh" ? zh : en
       {config.meta.title} - {title || config.meta.slogan}
     </title>
     <meta name="generator" content={Astro.generator} />
+    <meta name="keywords" content={config.meta.keywords} />
     <meta name="description" content={description || config.meta.description} />
 
     <!-- Open Graph / Facebook -->

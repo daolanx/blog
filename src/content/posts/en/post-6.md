@@ -59,15 +59,15 @@ Doing the right things is paramount, even if it means moving a little slower. Wh
 
 #### Cognitive Awakening
 
-- 《The Road to Wealth Freedom》by Xiaolai Li
+- _The Road to Wealth Freedom_ by Xiaolai Li
 
 #### Investment Cognition
 
-- 《Rich Dad Poor Dad》by Robert Toru Kiyosaki
+- _Rich Dad Poor Dad_ by Robert Toru Kiyosaki
 
 #### Technology Cognition
 
-- 《Hackers: Heroes of the Computer Revolution》by Steven Levy
-- 《iWoz: Computer Geek to Cult Icon》by Steve Wozniak
-- 《Just for Fun: The Story of an Accidental Revolutionary》by Linus Torvalds
-- 《Left Ear Listens to the Wind》by Hao Chen
+- _Hackers: Heroes of the Computer Revolution_ by Steven Levy
+- _iWoz: Computer Geek to Cult Icon_ by Steve Wozniak
+- _Just for Fun: The Story of an Accidental Revolutionary_ by Linus Torvalds
+- _Left Ear Listens to the Wind_ by Hao Chen
