@@ -27,3 +27,8 @@ export const getPostsByLocale = async (locale: string) => {
     (a: any, b: any) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
   )
 }
+
+export const getTagsByLocale = async (locale: string) => {
+  const posts = await getPostsByLocale(locale)
+  return [...new Set(posts.flatMap((post: any) => post.data.tags || []))]
+}

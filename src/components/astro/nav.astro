@@ -1,11 +1,9 @@
 ---
-import { en, zh } from "~/config"
+import { common } from "~/config"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-
-const { home, archive, about } = lang === "zh" ? zh.navigation : en.navigation
 ---
 
 <nav
@@ -14,44 +12,23 @@ const { home, archive, about } = lang === "zh" ? zh.navigation : en.navigation
   aria-label="Main navigation"
 >
   {
-    home && (
-      <a
-        href={`/${lang}`}
-        class="hover:underline hover:underline-offset-4"
-        aria-label={t("nav.home")}
-        title={t("nav.home")}
-        data-astro-prefetch="viewport"
-        rel="home"
-      >
-        {t("nav.home")}
-      </a>
-    )
-  }
-  {
-    archive && (
-      <a
-        href={`/${lang}/archive`}
-        class="hover:underline hover:underline-offset-4"
-        aria-label={t("nav.archive")}
-        title={t("nav.archive")}
-        data-astro-prefetch="viewport"
-      >
-        {t("nav.archive")}
-      </a>
-    )
-  }
+    common.navigations.map((nav) => {
+      const { labelKey, pathName } = nav
+      const navPath = `/${lang}${pathName ? `/${pathName}` : ""}`
+      const navLabel = t(labelKey as any)
 
-  {
-    about && (
-      <a
-        href={`/${lang}/about`}
-        class="hover:underline hover:underline-offset-4"
-        aria-label={t("nav.about")}
-        title={t("nav.about")}
-        data-astro-prefetch="viewport"
-      >
-        {t("nav.about")}
-      </a>
-    )
+      return (
+        <a
+          href={navPath}
+          class="hover:underline hover:underline-offset-4"
+          aria-label={navLabel}
+          title={navLabel}
+          data-astro-prefetch="viewport"
+          rel={navLabel}
+        >
+          {navLabel}
+        </a>
+      )
+    })
   }
 </nav>

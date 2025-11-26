@@ -1,0 +1,32 @@
+---
+import { getLangFromUrl } from "~/i18n/utils"
+import MainLayout from "~/layouts/main.astro"
+import { getTagsByLocale } from "~/utils"
+import { getLanguagePaths } from "~/utils/langs"
+
+export function getStaticPaths() {
+  return getLanguagePaths()
+}
+
+const lang = getLangFromUrl(Astro.url)
+const tags = await getTagsByLocale(lang)
+---
+
+<MainLayout ogImage="/preview.png">
+  <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
+    {
+      tags.map((tag) => {
+        return (
+          <li>
+            <a
+              class="inline visited:text-purple-500/90 hover:underline"
+              href={`/${lang}/tags/${encodeURIComponent(tag)}`}
+            >
+              #{tag}
+            </a>
+          </li>
+        )
+      })
+    }
+  </ul>
+</MainLayout>

@@ -22,18 +22,24 @@ export const common = {
     },
   ],
   rss: true,
-  navigation: {
-    home: true,
-    archive: true,
-    custom: [
-      // {
-      //   label: "CamLife",
-      //   link: "https://camlife.cn",
-      // },
-    ],
-    links: true,
-    about: true,
-  },
+  navigations: [
+    {
+      labelKey: "nav.home",
+      pathName: "",
+    },
+    {
+      labelKey: "nav.archive",
+      pathName: "archive",
+    },
+    {
+      labelKey: "nav.tags",
+      pathName: "tags",
+    },
+    {
+      labelKey: "nav.about",
+      pathName: "about",
+    },
+  ],
   latestPosts: 8,
 }
 
@@ -47,15 +53,7 @@ export const zh = {
     slogan: "前端，全栈，独立开发进阶之路",
     description: "记录从前端，到全栈和独立开发的进阶之路",
   },
-  navigation: {
-    ...common.navigation,
-    custom: [
-      // {
-      //   label: "影集",
-      //   link: "https://camlife.cn",
-      // },
-    ],
-  },
+
   pageMeta: {
     archive: {
       title: "归档",
@@ -82,15 +80,7 @@ export const en = {
     description:
       "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
   },
-  navigation: {
-    ...common.navigation,
-    custom: [
-      // {
-      //   label: "CamLife",
-      //   link: "https://camlife.cn",
-      // },
-    ],
-  },
+
   pageMeta: {
     archive: {
       title: "All Posts",
