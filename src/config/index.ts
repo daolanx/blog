@@ -18,7 +18,7 @@ export const common = {
     },
     {
       label: "Mail",
-      link: "mailto:email@example.com",
+      link: "mailto:daolanx@hotmail.com",
     },
   ],
 

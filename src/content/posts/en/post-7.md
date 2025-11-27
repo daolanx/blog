@@ -21,6 +21,8 @@ Interestingly, it was an unexpected gain. Early on, I found the learning and wor
 
 I saw what truly good programmers are like: their abilities and beliefs, their hobbies and personalities, as well as the inherent values and taste in the things they created. Simply put, good programmers are not plaid-shirted nerds who worship overtime and involution (excessive internal competition). They are individuals with character and aspirations. They pursue purity in their work, and they also advocate for an interesting and meaningful life, thereby finding their self-worth and meaning in life. Through books, the programmer community can travel through time and experience the past glory of MIT, Bell Labs, and even the Homebrew Computer Club. Looking back, I've been part of good teams that shared similar traits of freedom, purity, and simplicity. I feel a deeper resonance with the values of these people and teams.
 
+Therefore, my understanding of programmers is no longer just a means of work and earning, but it has gained an added layer of social identity and value recognition. It is a choice of what identity one will use to integrate into various industries and diverse groups of people, and what value one will exchange in the marketplace.
+
 ## Why Not Full-time Employment?
 
 ### Family Perspective
