@@ -1,5 +1,3 @@
-import { Github, Twitter } from "lucide-react"
-
 export const defaultLanguage: string = "en"
 
 export const common = {
@@ -11,17 +9,19 @@ export const common = {
   googleAnalyticsId: "G-YDEKLKLZVC",
   social: [
     {
-      icon: Twitter,
-      label: "X",
+      label: "Twitter",
       link: "https://x.com/daolanx",
     },
     {
-      icon: Github,
       label: "GitHub",
       link: "https://github.com/daolanx",
     },
+    {
+      label: "Mail",
+      link: "mailto:email@example.com",
+    },
   ],
-  rss: true,
+
   navigations: [
     {
       labelKey: "nav.home",

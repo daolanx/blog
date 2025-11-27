@@ -1,4 +1,5 @@
 ---
+import { common } from "~/config"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 
 const lang = getLangFromUrl(Astro.url)
@@ -6,15 +7,45 @@ const t = useTranslations(lang)
 const currentYear = new Date().getFullYear()
 ---
 
-<footer class="flex gap-x-3 py-10">
-  <p>
+<footer
+  class="flex flex-col items-baseline gap-x-4 py-10 md:flex-row"
+  role="contentinfo"
+>
+  <p class="">
     {t("author.name")} &copy; {currentYear}
   </p>
-  <div>|</div>
+  <div aria-hidden="true" class="hidden md:block">|</div>
+  <nav aria-label="Footer Links" class="flex gap-x-2">
+    <a
+      class="hover:underline"
+      target="_blank"
+      href={"/" + lang + "/rss.xml"}
+      aria-label="RSS Feed"
+    >
+      RSS
+    </a>
+    {
+      common.social.map((item) => {
+        return (
+          <a
+            class="hover:underline"
+            target="_blank"
+            href={item.link}
+            aria-label={item.label}
+          >
+            {item.label}
+          </a>
+        )
+      })
+    }
+  </nav>
+  <div aria-hidden="true" class="hidden md:block">|</div>
   <p>
     Powered By <a
       target="_blank"
+      class="hover:underline"
       aria-label="Astro Air"
+      rel="nofollow"
       href="https://github.com/sun0225SUN/astro-air"
     >
       Astro Air
