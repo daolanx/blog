@@ -9,13 +9,19 @@ const config = lang === "zh" ? zh : en
 ---
 
 <header class="flex h-24 items-center justify-between">
-  <a
-    href={`/${lang}`}
-    class="hover:text-primary text-2xl font-semibold transition-colors"
-    title={config.siteName}
-  >
-    <h1>{config.siteName}</h1>
-  </a>
+  <div>
+    <h1 class="text-3xl font-extrabold tracking-tight">
+      <a
+        href={`/${lang}`}
+        class="hover:text-primary text-2xl font-semibold transition-colors"
+        title={config.siteName}
+        >{config.siteName}
+      </a>
+    </h1>
+    <p class="pt-2 font-mono tracking-wider text-gray-600 dark:text-white/70">
+      {config.meta.slogan}
+    </p>
+  </div>
 
   <div class="flex items-center gap-6">
     <LanguageToggle client:load />
