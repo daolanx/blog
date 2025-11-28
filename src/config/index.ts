@@ -76,7 +76,7 @@ export const en = {
     ...common.meta,
     keywords: "F2E,Full-Stack,Indie Hacker",
     title: "Dax's Blog",
-    slogan: "From F2E, Full-Stack To Indie Hacker",
+    slogan: "F2E, Full-Stack To Indie Hacker",
     description:
       "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
   },

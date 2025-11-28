@@ -24,6 +24,9 @@ const config = lang === "zh" ? zh : en
     <meta name="keywords" content={config.meta.keywords} />
     <meta name="description" content={description || config.meta.description} />
 
+    <!-- DNS 预解析和预连接 -->
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content={permalink} />
@@ -39,48 +42,21 @@ const config = lang === "zh" ? zh : en
     <meta property="twitter:description" content={description} />
     <meta property="twitter:image" content={ogImageURL} />
 
-    <!-- Google Adsense -->
-    <meta name="google-adsense-account" content="ca-pub-9895910668268600" />
-
     <script is:inline>
-      const setTheme = () => {
-        const theme =
-          localStorage.getItem("theme") ??
-          (window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light")
-
-        if (theme === "dark") {
-          document.documentElement.classList.add("dark")
-          document.documentElement.setAttribute(
-            "data-theme",
-            "material-theme-darker",
-          )
-        } else {
-          document.documentElement.classList.remove("dark")
-          document.documentElement.setAttribute(
-            "data-theme",
-            "material-theme-lighter",
-          )
-        }
+      const theme =
+        localStorage.getItem("theme") ||
+        (window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light")
+      if (theme === "dark") {
+        document.documentElement.classList.add("dark")
       }
-
-      setTheme()
-
-      document.addEventListener("astro:after-swap", setTheme)
-      document.addEventListener("astro:page-load", setTheme)
     </script>
     {
       config.googleAnalyticsId && (
         <GoogleAnalytics id={config.googleAnalyticsId} />
       )
     }
-    <!-- Google Adsense -->
-    <script
-      is:inline
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9895910668268600"
-      crossorigin="anonymous"></script>
   </head>
   <body
     class="mx-auto max-w-3xl bg-stone-100 px-6 text-gray-800 dark:bg-slate-900 dark:text-gray-100"
