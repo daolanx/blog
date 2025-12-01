@@ -32,3 +32,15 @@ export const getTagsByLocale = async (locale: string) => {
   const posts = await getPostsByLocale(locale)
   return [...new Set(posts.flatMap((post: any) => post.data.tags || []))]
 }
+
+export const getTagsWithCountsByLocale = async (locale: string) => {
+  const posts = await getPostsByLocale(locale)
+  const tags: Record<string, number> = {}
+  posts.forEach((post: any) => {
+    const t = post.data.tags || []
+    t.forEach((tag: string) => {
+      tags[tag] = (tags[tag] || 0) + 1
+    })
+  })
+  return Object.entries(tags)
+}
