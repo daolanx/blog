@@ -18,7 +18,11 @@ const config = lang === "zh" ? zh : en
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <link rel="icon" type="image/png" href={config.meta.favicon} />
     <title>
-      {config.meta.title} - {title || config.meta.slogan}
+      {
+        title
+          ? `${title} - ${config.meta.title}`
+          : `${config.meta.title} - ${config.meta.slogan || ""}`
+      }
     </title>
     <meta name="generator" content={Astro.generator} />
     <meta name="keywords" content={config.meta.keywords} />
