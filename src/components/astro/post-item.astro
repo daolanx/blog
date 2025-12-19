@@ -1,20 +1,41 @@
 ---
+import { formatDate } from "~/utils"
+
+interface PostData {
+  title: string
+  pubDate: Date
+  description?: string
+}
+
+interface Post {
+  id: string
+  data: PostData
+}
+
 interface Props {
-  post: {
-    id: string
-    data: {
-      title: string
-      pubDate: Date
-      description?: string
-    }
-  }
+  post: Post
   lang: string
   dateFormat?: string
   dateWidth?: string
 }
 
-const { post, lang, dateFormat = "default" } = Astro.props
-import { formatDate } from "~/utils"
+const { post, lang, dateFormat = "default", dateWidth = "auto" } = Astro.props
+
+// Validate required props
+if (!post?.id || !post?.data?.title || !post?.data?.pubDate) {
+  throw new Error("PostItem: Invalid post data provided")
+}
+
+if (!lang || typeof lang !== "string") {
+  throw new Error("PostItem: Valid language (lang) is required")
+}
+
+// Generate post URL
+const postUrl = `/${lang}/posts/${post.id}/`
+
+// Format the publication date
+const formattedDate = formatDate(post.data.pubDate, dateFormat)
+const datetime = post.data.pubDate.toISOString()
 ---
 
 <article
@@ -22,7 +43,7 @@ import { formatDate } from "~/utils"
 >
   <h3 class="text-lg hover:underline">
     <a
-      href={`/${lang}/posts/${post.id}/`}
+      href={postUrl}
       class="visited:text-purple-500/90"
       title={post.data.title}
       aria-label={`Read post: ${post.data.title}`}
@@ -32,8 +53,10 @@ import { formatDate } from "~/utils"
   </h3>
   <time
     class="shrink-0 text-gray-700 dark:text-white/80"
-    datetime={post.data.pubDate.toISOString()}
+    style={dateWidth !== "auto" ? `width: ${dateWidth}` : undefined}
+    datetime={datetime}
+    aria-label={`Published on ${formattedDate}`}
   >
-    {formatDate(post.data.pubDate, dateFormat)}
+    {formattedDate}
   </time>
 </article>
