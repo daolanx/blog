@@ -1,5 +1,5 @@
 ---
-title: "Building a Free AI IDE with VSCode + Roo + Mimo"
+title: "Free AI IDE: VSCode + Roo + Mimo"
 pubDate: 2025-12-19
 updatedDate: 2025-12-19
 author: "Dax"

@@ -1,5 +1,5 @@
 ---
-title: "VSCode + Roo + Mimo 搭建免费 AI IDE"
+title: "免费 AI IDE: VSCode + Roo + Mimo"
 pubDate: 2025-12-19
 updatedDate: 2025-12-19
 author: "道蓝"
