@@ -3,7 +3,7 @@ export const defaultLanguage: string = "en"
 export const common = {
   domain: "https://daolanx.me",
   meta: {
-    favicon: "/avatar.webp",
+    favicon: "/avatar.png",
     url: "https://daolanx.me",
   },
   googleAnalyticsId: "G-YDEKLKLZVC",
