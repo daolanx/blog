@@ -2,7 +2,7 @@
 title: GAP 一年的意义
 pubDate: 2025-10-22
 updatedDate: 2025-10-22
-author: "道蓝"
+author: "Dax"
 tags: ["GAP"]
 description: ""
 ---

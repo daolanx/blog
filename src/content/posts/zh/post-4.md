@@ -3,7 +3,7 @@ title: "2024下半年：求职、独立开发、投资、带娃"
 pubDate: 2025-01-28
 updatedDate: 2025-01-28
 description: ""
-author: "道蓝"
+author: "Dax"
 tags: ["2024下半年", "求职", "独立开发", "投资之路", "奶爸"]
 ---
 

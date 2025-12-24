@@ -2,7 +2,7 @@
 title: "免费 AI IDE: VSCode + Roo + Mimo"
 pubDate: 2025-12-19
 updatedDate: 2025-12-19
-author: "道蓝"
+author: "Dax"
 tags: ["VSCode", "Roo Code", "Mimo", "AI", "IDE"]
 description: ""
 ---

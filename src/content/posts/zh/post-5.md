@@ -2,7 +2,7 @@
 title: 那些带娃教会我的事情
 pubDate: 2025-08-18
 updatedDate: 2025-08-18
-author: "道蓝"
+author: "Dax"
 tags: ["全职奶爸", "家庭", "终极问题", "投资之路"]
 description: ""
 ---

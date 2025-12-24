@@ -2,7 +2,7 @@
 title: "博客搭建：Astro 框架 + Vercel 部署 + Cloudflare DNS 代理"
 pubDate: 2025-11-30
 updatedDate: 2025-11-30
-author: "道蓝"
+author: "Dax"
 tags: ["Astro", "Vercel", "Cloudflare"]
 description: ""
 ---

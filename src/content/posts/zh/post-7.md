@@ -2,7 +2,7 @@
 title: 为什么要继续从事技术工作
 pubDate: 2025-11-05
 updatedDate: 2025-11-05
-author: "道蓝"
+author: "Dax"
 tags: ["职业规划", "技术工作"]
 description: ""
 ---

@@ -3,21 +3,26 @@ export const defaultLanguage: string = "en"
 export const common = {
   domain: "https://daolanx.me",
   meta: {
-    favicon: "/avatar.png",
+    favicon: "/avatar.webp",
     url: "https://daolanx.me",
   },
   googleAnalyticsId: "G-YDEKLKLZVC",
   social: [
     {
-      label: "Twitter",
-      link: "https://x.com/daolanx",
-    },
-    {
       label: "GitHub",
       link: "https://github.com/daolanx",
     },
     {
-      label: "Mail",
+      label: "Twitter",
+      link: "https://x.com/daolanx",
+    },
+    {
+      label: "Profile",
+      link: "https://work.daolanx.me",
+    },
+
+    {
+      label: "Email",
       link: "mailto:daolanx@hotmail.com",
     },
   ],
@@ -45,10 +50,10 @@ export const common = {
 
 export const zh = {
   ...common,
-  siteName: "道蓝的博客",
+  siteName: "Dax 的博客",
   meta: {
     ...common.meta,
-    title: "道蓝的博客",
+    title: "Dax 的博客",
     keywords: "前端,全栈,独立开发",
     slogan: "前端，全栈，独立开发进阶之路",
     description: "记录从前端，到全栈和独立开发的进阶之路",
@@ -57,13 +62,13 @@ export const zh = {
   pageMeta: {
     archive: {
       title: "归档",
-      description: "道蓝的所有文章",
+      description: "Dax 的所有文章",
       ogImage: "/images/page-meta/zh/archive.png",
     },
 
     about: {
       title: "关于我",
-      description: "道蓝的自我介绍",
+      description: "Dax 的自我介绍",
       ogImage: "/images/page-meta/zh/about.png",
     },
   },

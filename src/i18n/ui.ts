@@ -22,7 +22,7 @@ export const ui = {
     "tag.no_posts": "No posts found for tag",
   },
   zh: {
-    "author.name": "道蓝",
+    "author.name": "Dax",
     "nav.home": "首页",
     "nav.about": "关于",
     "nav.archive": "归档",
