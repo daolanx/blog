@@ -6,7 +6,7 @@ export const common = {
     favicon: "/avatar.png",
     url: "https://daolanx.me",
   },
-  googleAnalyticsId: "G-YDEKLKLZVC",
+  googleAnalyticsId: null,
   social: [
     {
       label: "GitHub",
