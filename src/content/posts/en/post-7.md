@@ -1,56 +1,56 @@
 ---
-title: Why Stick with a Career in Technology
+title: Why I'm Sticking with Front-End Development
 pubDate: 2025-11-05
-updatedDate: 2025-11-05
-author: "dax"
-tags: ["Career Planning", "Tech Job"]
+updatedDate: 2026-01-14
+author: "Dax"
+tags: ["Career Planning"]
 description: ""
 ---
 
-From the time I naively chose computer science as my major in college, to graduating and working in the related industry, to leaving the workplace, and then experiencing full-time childcare, now that the child is finally in kindergarten and I have some free time, it's time to reconsider what to do next for income and development.
+## I. The Trigger for Rethinking
 
-## Why Choose Tech Career?
+I worked as a Front-End Developer in a corporate setting for many years, but it wasn’t until I resigned that I truly found the opportunity to re-examine the question: "What is actually suitable for me going forward?" Many questions don't have immediate answers; they require time and experience to settle.
 
-### Market Advantage and Leverage
+In the first few months after leaving, I felt a distinct discomfort from the sudden loss of life’s momentum. This was accompanied by anxiety—anxiety about the pause in income, and anxiety about having idle time. So, out of habit, I began polishing my resume, grinding algorithms, and memorizing standardized interview trivia. 
 
-From a market specialization perspective, it is more suitable to engage in work that leverages existing experience and offers relatively high leverage. Although I've lost the packaging provided by a company, and my personal skills need to be updated according to market demands, and I need to manage myself like a one-person company in many aspects, this might not be a bad direction in the medium to long term. This is no longer a linear task game but a free mode. The word "crisis" now holds more risks, but also greater opportunities.
+However, I ultimately chose not to continue down the path of job hunting.
 
-### Cognitive Perspective
+Part of this decision stemmed from the internal conflict I felt during the interview prep. While a job provides stable income, the process felt like selling practically all my time as a commodity, where my technical skills were merely quality-control checklists used to filter me. It felt heavily objectifying.
 
-Interestingly, it was an unexpected gain. Early on, I found the learning and work monotonous and boring because I was only told how to do things. Driven by curiosity to understand why and what kind of people were behind it, I read some books on the history of computing and biographies of famous computer figures. I re-read them in detail during my time with the child. I gained a deeper understanding between the lines, which allowed me to break free from the "Truman Show" of common knowledge and ingrained perceptions around me.
+But the primary reason was family. I need to take on the responsibility of childcare. In the internet industry, leaving early and returning late is the norm; balancing that schedule with taking care of a child is next to impossible.
 
-I saw what truly good programmers are like: their abilities and beliefs, their hobbies and personalities, as well as the inherent values and taste in the things they created. Simply put, good programmers are not plaid-shirted nerds who worship overtime and involution (excessive internal competition). They are individuals with character and aspirations. They pursue purity in their work, and they also advocate for an interesting and meaningful life, thereby finding their self-worth and meaning in life. Through books, the programmer community can travel through time and experience the past glory of MIT, Bell Labs, and even the Homebrew Computer Club. Looking back, I've been part of good teams that shared similar traits of freedom, purity, and simplicity. I feel a deeper resonance with the values of these people and teams.
+### II. Why Stick with Front-End?
 
-Therefore, my understanding of programmers is no longer just a means of work and earning, but it has gained an added layer of social identity and value recognition. It is a choice of what identity one will use to integrate into various industries and diverse groups of people, and what value one will exchange in the marketplace.
+Despite not seeking a corporate job, I decided to continue working in Front-End Development as a freelancer. This is based on two main reasons.
 
-## Why Not Full-time Employment?
+The first is a direct, pragmatic reason: within the context of the social division of labor, it makes the most sense to do what I am experienced in. As a profession, Front-End provides value just like many other service roles. It is neither lowly nor something to show off about. If it provides value, it exists; if there is a market, there is an industry scale. Furthermore, every industry is stratified. You don't have to be in the top 1% to survive; you can find a niche and a position that suits you.
 
-### Family Perspective
+The second reason is a "cognitive sourcing" of what it means to be a programmer. I’ve been reading some books, and the one that impacted me most was "Hackers: Heroes of the Computer Revolution".
 
-The current world has a "bug"—full-time work is extremely unfriendly to parenting. I would generally leave in the morning and return very late, while kindergarten ends at 4 PM. Forget about taking care of the child; I might not even see them before bedtime. In these situations, the grandparents usually step in. Considering my family's situation, I need to dedicate time to the child, so the schedule doesn't suit full-time employment.
+We are born into an environment where we are conditioned to absorb information from our surroundings. We have formed a consensus on the stereotypes of programmers: the rigid personality, the high-intensity overtime, and the idea that this is a "young person's game" with an expiration date at age 35.
 
-### Recruitment Perspective
+But in reality, this is not the case. By using books to transcend time and look at the origins of programming—the development of the internet and computers, and the people behind these advancements—you see their cultural identity, their pursuits, their values, and their personalities. You discover that the reality differs vastly from the rigid stereotypes most people hold today.
 
-There are currently many age restrictions. Although statistical reports and numerous cases prove this is unreasonable, the prevailing sentiment is such that the difficulty in applying for jobs increases, suggesting the local market is not healthy or mature enough.
+It reminds me of the movie "The Truman Show". When Truman rows his boat and pierces the sky, he realizes it is actually the backdrop of a studio set. He has to tear open that curtain to find real information and seek the truth.
 
-### Development Perspective
+You could say that most programmers, from their education to their employment, are molded as products of an industrial assembly line. But that is not the correct truth. The true history of computing is full of diverse individuals and heroism, encompassing their unique personalities and pursuits. Front-End is not just a solidified role in the division of labor; it is a technical product and a branch of technology. For personal development, becoming a Front-End developer to meet social needs is the starting point, not the end point. Only with a clearer cognition and a sense of identity can one walk steadier and further in this field.
 
-I already have significant insights from my time in the workplace. Objectively, the benefits of the workplace are two-fold: it offers a relatively stable salary and reduces the individual's business costs—it's a convenient and stable "packaging." The product development, sales, and operations of the entire business process are completed by others; you only need to focus on your professional tasks.
+### III. The Challenge of Starting Over
 
-The drawbacks are also evident. personal technical development is limited by the team and company, which might not be free or advanced enough. Business acumen is also limited, as it's impossible to cover the entire process. Result measurement mainly based on time, promotion, and other mechanisms are highly competitive and heavily reliant on luck and the team. Therefore, long-term development is restricted.
+The first challenge I faced was the technology itself. Although it is all "Front-End," the tech stack in the open-source community is completely different from what is used inside companies. Leaving the corporate ecosystem meant almost relearning everything from scratch.
 
-## How to Proceed?
+However, after a few weeks of exploration, I found that community technology is actually more flexible and mature. The possibility of becoming a "Super Individual" is greater now. In the past, developing and deploying a simple app required coordinating various links and people; now, it can be done very quickly.
 
-I think a two-pronged approach is more secure.
+The second challenge is the impact of AI. AI-generated content is everywhere now. My view is that, first and foremost, one must solidify the fundamentals. If you don't understand the principles, you will be hollowed out and easily replaced. But if you understand the principles, AI becomes an efficiency booster—we cannot put the cart before the horse.
 
-### Gaze at the Stars, Do the Right Thing
+Furthermore, rather than worrying, "if you can't beat them, join them." I should use AI to strengthen my own capabilities.
 
-As my meta-cognition increases and I delve into technical culture, I increasingly feel the value of doing the right thing. Technical culture and the source of technology need to be studied. As I learn deeper, I can feel the inherited genes of popular technologies. Taking front-end as an example, there were many solutions a long time ago. Today, many have disappeared, yet solutions similar to the Unix file system have endured. This shows that such designs, having withstood the test of four or five decades, are highly valuable. It's fine to try popular and interesting technologies, such as microcontrollers and circuit boards. This may not have a direct relationship with short-term career or profit, but with time, they will help you break free from templated skills and life, allowing you to progressively evolve from cognition, to ability, to identity in the free mode, ultimately reshaping your life and becoming the person you aspire to be.
+### IV. The Ultimate Question of Continuous Reflection
 
-### Keep Feet on the Ground, Focus on Career Monetization
+Inscribed on the Temple of Apollo at Delphi is a maxim: "Know Thyself."
 
-The goal is to integrate into social production and earn money professionally as quickly as possible, and gradually. Although the transition from the corporate technical and collaboration model to a business community technical model requires adjustment, and I have zero experience in customer acquisition and sales—many things won't be smooth sailing—the risk is also accompanied by greater opportunities and freedom. The priority is to survive first, and then slowly develop.
+In this vast world, everyone’s life is vastly different. But as individuals, we face a choice: either drift with the current, or from the "boundless ocean, take only one ladle of water." Making that choice—that trade-off—is what defines your own life.
 
-## The Ultimate Question: What Kind of Life Do I Want to Live?
+Life is short. How do we spend it so it doesn't feel wasted? How do we find meaning?
 
-Before this, I was, like most people, living a life and career that was assigned and planned for me. Now, I finally have the opportunity to slow down, examine everything, and restart. So, life is short; in this era, what do I want to do, with whom do I want to work, what kind of person do I want to become, and what kind of life do I want to lead? The hackers' answer is very simple: a life pursuing extremes, interestingness, and usefulness is satisfactory enough.
+Perhaps continuously doing things that you find valuable and interesting is enough.
