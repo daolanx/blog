@@ -23,7 +23,7 @@ export const common = {
 
     {
       label: "Email",
-      link: "mailto:daolanx@hotmail.com",
+      link: "mailto:daolanx.dev@gmail.com",
     },
   ],
 
