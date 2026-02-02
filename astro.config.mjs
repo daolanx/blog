@@ -9,14 +9,19 @@ import { defineConfig } from "astro/config"
 
 import robotsTxt from "astro-robots-txt"
 
+import cloudflare from "@astrojs/cloudflare"
+
 // https://astro.build/config
 export default defineConfig({
   output: "static",
+
   prefetch: {
     prefetchAll: false,
     defaultStrategy: "tap",
   },
+
   site: "https://daolanx.me",
+
   vite: {
     plugins: [tailwindcss()],
     build: {
@@ -49,6 +54,7 @@ export default defineConfig({
       },
     },
   },
+
   integrations: [
     react(),
     sitemap(),
@@ -62,4 +68,12 @@ export default defineConfig({
     mdx(),
     robotsTxt(),
   ],
+
+  experimental: {
+    session: true,
+  },
+
+  adapter: cloudflare({
+    imageService: 'compile'
+  }),
 })
