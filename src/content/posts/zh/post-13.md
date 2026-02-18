@@ -3,7 +3,7 @@ title: "Next.js + Cloudflare R2 & Workers Routes 代理静态资源，极速性�
 pubDate: 2026-02-18
 updatedDate: 2026-02-18
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "Worker", "Performance"]
+tags: ["Next.js", "Cloudflare", "Worker", "性能优化"]
 description: ""
 ---
 

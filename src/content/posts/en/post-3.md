@@ -4,7 +4,7 @@ pubDate: 2024-10-29
 updatedDate: 2024-10-29
 description: ""
 author: "Dax"
-tags: ["synology", "NAS", "Cloudflare", "SiYuan"]
+tags: ["Synology", "NAS", "Cloudflare", "SiYuan"]
 ---
 
 ## 1. Why Choose SiYuan Notes

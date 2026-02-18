@@ -3,7 +3,7 @@ title: "Next.js + Cloudflare R2: Boosting Performance While Slashing Costs"
 pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "CDN", "GitHub"]
+tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "Performance"]
 description: ""
 ---
 

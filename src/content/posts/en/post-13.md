@@ -9,7 +9,7 @@ description: ""
 
 ## 1. Effect Overview
 
-In the previous post [Next.js + Cloudflare R2: Higher Performance, Lower Cost](/zh/posts/post-12/), we achieved the separation of Next.js static assets from Vercel to Cloudflare R2, leveraging edge nodes to improve loading speeds.
+In the previous post [Next.js + Cloudflare R2: Higher Performance, Lower Cost](/en/posts/post-12/), we achieved the separation of Next.js static assets from Vercel to Cloudflare R2, leveraging edge nodes to improve loading speeds.
 
 After further optimization, **static assets and web pages are now served from the same domain**, and images support **responsive on-demand transformation**. Lighthouse scores show a perfect 100 across all PC indicators and a 98 for mobile performance, with all other scores at 100. The performance is exceptional.
 

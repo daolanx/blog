@@ -4,7 +4,7 @@ pubDate: 2024-10-14
 updatedDate: 2024-10-14
 description: ""
 author: "Dax"
-tags: ["ESP32", "elink", "AI"]
+tags: ["ESP32", "Elink", "AI"]
 ---
 
 > - This is an ESP32-based e-ink AI calendar. Like time itself - yesterday cannot be kept, today is fresh, and tomorrow remains unknown - it displays unique AI-generated content each day that cannot be saved or modified, running silently with ultra-low power consumption and no power switch.
