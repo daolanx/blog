@@ -3,7 +3,7 @@ title: "Next.js First Impressions: A Modern Web Framework for Frontend"
 pubDate: 2025-12-17
 updatedDate: 2025-12-17
 author: "Dax"
-tags: ["Next.js", "Beginner"]
+tags: ["Next.js"]
 description: ""
 ---
 

@@ -3,7 +3,7 @@ title: "Next.js 初学感受：适合前端的 Web 框架"
 pubDate: 2025-12-17
 updatedDate: 2025-12-17
 author: "Dax"
-tags: ["Next.js", "Beginner"]
+tags: ["Next.js"]
 description: ""
 ---
 

@@ -3,7 +3,7 @@ title: The Significance of a GAP Year
 pubDate: 2025-10-22
 updatedDate: 2025-10-22
 author: "Dax"
-tags: ["GAP", "Significance"]
+tags: ["GAP"]
 description: ""
 ---
 

@@ -3,7 +3,7 @@ title: "Next.js + Cloudflare R2 & Workers Routes: Proxying Static Assets for Pea
 pubDate: 2026-02-18
 updatedDate: 2026-02-18
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "Performance"]
+tags: ["Next.js", "Cloudflare", "Worker", "Performance"]
 description: ""
 ---
 

@@ -4,7 +4,7 @@ pubDate: 2025-01-28
 updatedDate: 2025-01-28
 description: ""
 author: "Dax"
-tags: ["2024 H2", "Job Hunt", "Indie Dev", "Invest", "Babysitting"]
+tags: ["Career Planning"]
 ---
 
 Written on New Year's Eve, this is a rough summary of the events and reflections from the past half of 2024.

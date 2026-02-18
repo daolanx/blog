@@ -4,7 +4,7 @@ pubDate: 2024-06-14
 updatedDate: 2024-06-14
 description: ""
 author: "Dax"
-tags: ["Musings", "Ant"]
+tags: ["Ant"]
 ---
 
 In June 2024, I left Ant Group, exactly ten years after joining in June 2014. Prior to that, I worked for three years in the Taobao Kariqu project team from March 2011 to June 2024, adding up to thirteen years at Alibaba.

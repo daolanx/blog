@@ -16,8 +16,6 @@ Let’s jump straight to the results. My site [work.daolanx.me](https://work.dao
 1. **Superior Performance**: While Vercel's edge network is excellent, Cloudflare operates one of the world's largest global networks with higher node density and more granular edge configuration options.
 2. **Significant Cost Savings**: Serving resources via Cloudflare R2 incurs **zero egress fees**. In contrast, Vercel’s bandwidth costs can scale rapidly once you exceed the free tier. Offloading static assets drastically reduces Vercel's bandwidth pressure.
 
-
-
 # Implementation Concept
 
 ### Original Workflow
@@ -30,8 +28,6 @@ All Build and Deploy processes were handled automatically within the Vercel envi
 - **Sync Static Assets**: Upload the static portion of the build output (`.vercel/output/static`) to Cloudflare R2.
 - **Ship Build Artifacts**: Send the pre-compiled artifacts to Vercel.
 - **Prebuilt Deployment**: Vercel receives the artifacts and deploys them instantly without re-running the build process.
-
-
 
 # Step-by-Step Guide
 

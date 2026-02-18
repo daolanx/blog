@@ -3,13 +3,7 @@ title: What Parenting Taught Me
 pubDate: 2025-08-18
 updatedDate: 2025-08-18
 author: "Dax"
-tags:
-  [
-    "Stay-at-Home Dad",
-    "Family",
-    "The Ultimate Question",
-    "My Investment Journey",
-  ]
+tags: ["Stay-at-Home Dad", "Family", "The Ultimate Question"]
 description: ""
 ---
 
