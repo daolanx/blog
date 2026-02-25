@@ -1,31 +1,35 @@
 export const title = "Hi, I'm Dax"
 
-<article class="max-w-7xl ">
-  <h1 class="my-10 text-center text-xl font-bold">{title}</h1>
+<article>
+  <header class="mb-10">
+    <h1 class="text-3xl font-bold">{title}</h1>
+ 
+  </header>
 
-  <section class="border-b-2 border-solid border-gray-200 pb-8">
+  <section class="border-b border-gray-200 dark:border-gray-700 pb-10 space-y-6 ">
     <h2 class="sr-only">About Me</h2>
-    
-    <p class="mb-4">I am currently a freelance frontend developer working towards becoming a full-stack indie developer. You can find me on 
-      <a class="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" href="https://github.com/daolanx">Github</a>, 
-      <a class="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" href="https://x.com/daolanx">Twitter</a>, 
-      <a class="underline hover:text-blue-600" target="_blank" rel="noopener noreferrer" href="https://work.daolanx.me/">Profile</a>, 
-      and 
-      <a class="underline hover:text-blue-600" href="mailto:daolanx.dev@gmail.com">Email</a>. 
-      Thanks for following along!</p>
-   
-    <div class="mb-6">
-      <p>I believe that programming inherently contains both joy and meaning. I hope to follow in the footsteps of the pioneers, finding the balance between personal passion and social value.</p>
-    </div>
-    <figure class="my-8">
+
+    <p >
+      I am currently a freelance frontend developer working towards becoming a full-stack indie developer. <br/>You can find me on
+      <a target="_blank" rel="noopener noreferrer" href="https://github.com/daolanx">Github</a>,
+      <a target="_blank" rel="noopener noreferrer" href="https://x.com/daolanx">Twitter</a>,
+      <a target="_blank" rel="noopener noreferrer" href="https://work.daolanx.me/">Profile</a>,
+      and <a href="mailto:daolanx.dev@gmail.com">Email</a>.
+      Thanks for following along!
+    </p>
+
+    <p>
+      I believe that programming inherently contains both joy and meaning. <br/>I hope to follow in the footsteps of the pioneers, finding the balance between personal passion and social value.
+    </p>
+
+    <figure>
       <img
-        class="mx-auto w-4/5 max-w-120 rounded-lg opacity-70 shadow-sm"
+        class="w-4/5 max-w-100 rounded-sm opacity-80 hover:opacity-100 transition duration-500"
         src="/images/page-meta/steve_jobs_steve_wozniak_1970s.webp"
         alt="In the early 1970s, Steve Jobs and Steve Wozniak at a workbench, repairing or debugging a computer prototype together."
         loading="lazy"
       />
-      <figcaption class="sr-only">Jobs and Wozniak repairing a computer prototype</figcaption>
+     
     </figure>
-
   </section>
 </article>
