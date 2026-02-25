@@ -20,6 +20,7 @@ export const ui = {
     "links.title": "My Friends",
     "tag.title": "Tag:",
     "tag.no_posts": "No posts found for tag",
+    "post.toc": "Contents",
   },
   zh: {
     "author.name": "Dax",
@@ -33,5 +34,6 @@ export const ui = {
     "archive.title": "所有文章",
     "tag.title": "标签：",
     "tag.no_posts": "没有找到标签为的文章",
+    "post.toc": "目录",
   },
 } as const
