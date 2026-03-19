@@ -2,6 +2,7 @@
 title: "The Indie Developer Trinity: IDE + Code Agent + AI Assistant"
 pubDate: 2026-03-10
 updatedDate: 2026-03-10
+author: "Dax"
 tags: ["VSCode", "Claude Code", "OpenClaw"]
 description: "Exploring the paradigm shift in programming: How to orchestrate a high-efficiency workflow using VSCode, Claude Code, and OpenClaw."
 ---

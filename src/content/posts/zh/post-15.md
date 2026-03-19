@@ -1,6 +1,6 @@
 ---
 title: "独立开发工作流三件套：IDE + Code Agent + AI Assistant "
-
+author: "Dax"
 pubDate: 2026-03-10
 updatedDate: 2026-03-10
 tags: ["VSCode", "Claude Code", "OpenClaw"]
