@@ -7,7 +7,7 @@ tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "Performance"]
 description: ""
 ---
 
-Let’s jump straight to the results. My site [work.daolanx.me](https://work.daolanx.me/) is hosted on Vercel, but all static assets and images are now served via **assets.daolanx.com**.
+Let’s jump straight to the results. My site [work.daolanx.me](https://demo.daolanx.com/) is hosted on Vercel, but all static assets and images are now served via **assets.daolanx.com**.
 
 ![](/images/posts/12/1.webp)
 

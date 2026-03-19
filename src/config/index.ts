@@ -18,7 +18,7 @@ export const common = {
     },
     {
       label: "Profile",
-      link: "https://work.daolanx.me",
+      link: "https://demo.daolanx.com",
     },
 
     {

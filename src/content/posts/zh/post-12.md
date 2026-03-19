@@ -7,7 +7,7 @@ tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "性能优化"]
 description: ""
 ---
 
-先直接看效果，我的 [work.daolanx.me](https://work.daolanx.me/) 站点部署在 Vercel 上面，目前静态资源和图片都是通过 **assets.daolanx.com** 访问。
+先直接看效果，我的 [work.daolanx.me](https://demo.daolanx.com/) 站点部署在 Vercel 上面，目前静态资源和图片都是通过 **assets.daolanx.com** 访问。
 
 ![](/images/posts/12/1.webp)
 
