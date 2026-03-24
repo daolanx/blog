@@ -7,7 +7,7 @@ tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "性能优化"]
 description: ""
 ---
 
-先直接看效果，我的 [work.daolanx.me](https://demo.daolanx.com/) 站点部署在 Vercel 上面，目前静态资源和图片都是通过 **assets.daolanx.com** 访问。
+先看效果，站点部署在 Vercel 上面，静态资源和图片都是存储在 R2 上，通过 R2 配置的 **assets** 子域名访问。
 
 ![](/images/posts/12/1.webp)
 
@@ -71,7 +71,7 @@ import type { NextConfig } from "next"
 const isProd = process.env.NODE_ENV === "production"
 const nextConfig: NextConfig = {
   // assetPrefix 修改静态资源前缀
-  assetPrefix: isProd ? "https://your-cdn-domain.com" : undefined,
+  assetPrefix: isProd ? "https://assets.your-domain.com" : undefined,
   // 图片采用自定义加载方案
   images: {
     loader: "custom",
@@ -92,7 +92,7 @@ export default function myImageLoader({ src }: { src: string }) {
     return src
   }
   // 拼接 Cloudflare R2 的加速域名
-  return `https://your-cdn-domain.com${src}`
+  return `https://assets.your-domain.com${src}`
 }
 ```
 

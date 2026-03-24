@@ -7,7 +7,7 @@ tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "Performance"]
 description: ""
 ---
 
-Let’s jump straight to the results. My site [work.daolanx.me](https://demo.daolanx.com/) is hosted on Vercel, but all static assets and images are now served via **assets.daolanx.com**.
+First, check out the result. The site is hosted on Vercel, with all static files and images sitting on R2, served through a custom **assets** subdomain.
 
 ![](/images/posts/12/1.webp)
 
@@ -51,7 +51,7 @@ Go to **Settings -> CORS Policy** in your R2 bucket and add the following config
 ```json
 [
   {
-    "AllowedOrigins": ["https://www.yourdomain.com", "http://localhost:3000"],
+    "AllowedOrigins": ["https://www.your-domain.com", "http://localhost:3000"],
     "AllowedMethods": ["GET", "HEAD"],
     "AllowedHeaders": ["*"],
     "ExposeHeaders": [],
@@ -71,7 +71,7 @@ import type { NextConfig } from "next"
 const isProd = process.env.NODE_ENV === "production"
 const nextConfig: NextConfig = {
   // assetPrefix: Routes JS/CSS and other build assets to your CDN
-  assetPrefix: isProd ? "https://your-cdn-domain.com" : undefined,
+  assetPrefix: isProd ? "https://assets.your-domain.com" : undefined,
 
   // Enable custom loader to bypass Vercel's image optimization costs
   images: {
@@ -93,7 +93,7 @@ export default function myImageLoader({ src }: { src: string }) {
     return src
   }
   // Append Cloudflare R2 acceleration domain
-  return `https://your-cdn-domain.com${src}`
+  return `https://assets.your-domain.com${src}`
 }
 ```
 
