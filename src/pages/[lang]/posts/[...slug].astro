@@ -35,16 +35,23 @@ const structuredData = {
   "@type": "BlogPosting",
   headline: post.data.title,
   datePublished: post.data.pubDate,
+  dateModified: post.data.updatedDate || post.data.pubDate,
   author: {
     "@type": "Person",
     name: "Dax",
   },
+  publisher: {
+    "@type": "Person",
+    name: "Dax",
+    url: "https://daolanx.me",
+  },
+  image: post.data.heroImage ? new URL(post.data.heroImage, Astro.site).href : undefined,
   keywords: post.data.tags.join(","),
   description: post.data.description,
 }
 ---
 
-<MainLayout {...post.data}>
+<MainLayout {...post.data} ogType="article">
   <script
     is:inline
     type="application/ld+json"

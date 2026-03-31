@@ -26,7 +26,7 @@ export async function GET(request: { url: URL }) {
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.pubDate,
-      link: `/posts/${post.id}/`,
+      link: `/${lang}/posts/${post.id}/`,
       content: post.rendered ? post.rendered.html : post.data.description,
     })),
     customData: "",

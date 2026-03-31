@@ -3,8 +3,9 @@ import { defaultLanguage, en, zh } from "~/config"
 import { getPostsByLocale } from "~/utils"
 
 export async function GET() {
-  const posts = await getPostsByLocale(defaultLanguage)
-  const config = defaultLanguage === "en" ? en : zh
+  const lang = defaultLanguage
+  const posts = await getPostsByLocale(lang)
+  const config = lang === "en" ? en : zh
 
   return rss({
     title: config.meta.title,
@@ -17,7 +18,7 @@ export async function GET() {
       title: post.data.title,
       description: post.data.description,
       pubDate: post.data.pubDate,
-      link: `/posts/${post.id}/`,
+      link: `/${lang}/posts/${post.id}/`,
       content: post.rendered ? post.rendered.html : post.data.description,
     })),
     customData: "",

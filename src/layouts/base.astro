@@ -3,12 +3,14 @@ import { getLangFromUrl } from "~/i18n/utils"
 import { GoogleAnalytics } from "astro-google-analytics"
 import { en, zh } from "~/config"
 import "~/styles/tailwind.css"
+import { langs } from "~/i18n/ui"
 
-const { title, description, ogImage } = Astro.props
+const { title, description, ogImage, ogType = "website" } = Astro.props
 const ogImageURL = new URL(ogImage, Astro.site).href
 const permalink = new URL(Astro.url.pathname, Astro.site).href
 const lang = getLangFromUrl(Astro.url)
 const config = lang === "zh" ? zh : en
+const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
 ---
 
 <!doctype html>
@@ -28,11 +30,21 @@ const config = lang === "zh" ? zh : en
     <meta name="keywords" content={config.meta.keywords} />
     <meta name="description" content={description || config.meta.description} />
 
+    <!-- Canonical & hreflang -->
+    <link rel="canonical" href={canonicalURL} />
+    {
+      langs.map((langCode) => {
+        const href = new URL(`/${langCode}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`, Astro.site).href
+        return <link rel="alternate" hreflang={langCode} href={href} />
+      })
+    }
+    <link rel="alternate" hreflang="x-default" href={canonicalURL} />
+
     <!-- DNS 预解析和预连接 -->
     <link rel="preconnect" href="https://www.google-analytics.com" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={permalink} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
