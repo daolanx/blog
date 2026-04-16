@@ -1,14 +1,8 @@
 article code {
   border-radius: 0.25rem;
-  background-color: rgba(186, 230, 253, 0.3);
   padding-left: 0.25rem;
   padding-right: 0.25rem;
   color: #0369a1;
-}
-
-.dark article code {
-  background-color: rgba(7, 89, 133, 0.3);
-  color: #7dd3fc;
 }
 
 article code::before,
