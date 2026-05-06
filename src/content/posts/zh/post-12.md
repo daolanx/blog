@@ -1,9 +1,9 @@
 ---
-title: "Next.js + Cloudflare R2：更高性能，更低成本"
+title: "Next.js + Cloudflare #1: 使用 R2 提升性能并降低成本"
 pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "CDN", "GitHub", "性能优化"]
+tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "性能优化"]
 description: ""
 ---
 

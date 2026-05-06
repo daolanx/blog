@@ -1,9 +1,9 @@
 ---
-title: "Next.js + Cloudflare R2 & Workers Routes: Proxying Static Assets for Peak Performance"
+title: "Next.js + Cloudflare #2: Using R2 + Worker Proxying Static Assets for Peak Performance"
 pubDate: 2026-02-18
 updatedDate: 2026-02-18
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "Worker", "Performance"]
+tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "Performance"]
 description: ""
 ---
 
