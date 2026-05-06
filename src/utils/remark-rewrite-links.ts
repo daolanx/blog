@@ -1,6 +1,3 @@
-import type { Plugin } from "unified"
-import type { Root } from "mdast"
-
 const LANGS = ["en", "zh"]
 
 /**
@@ -8,9 +5,9 @@ const LANGS = ["en", "zh"]
  * to include the language prefix (e.g. /zh/posts/post-12/) based on
  * the content file's location (src/content/posts/{lang}/...).
  */
-export const remarkRewriteLinks: Plugin<[Root], Root> = () => {
-  return (tree, file) => {
-    const filePath = file.history?.[0] || (file as any).path || ""
+export function remarkRewriteLinks() {
+  return (tree: any, file: any) => {
+    const filePath = file.history?.[0] || file.path || ""
     const match = filePath.match(/\/content\/posts\/(en|zh)\//)
     if (!match) return
     const lang = match[1]
