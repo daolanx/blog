@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite"
 import { defineConfig } from "astro/config"
 
 import robotsTxt from "astro-robots-txt"
+import { remarkRewriteLinks } from "./src/utils/remark-rewrite-links"
 
 // https://astro.build/config
 export default defineConfig({
@@ -45,6 +46,9 @@ export default defineConfig({
         },
       },
     },
+  },
+  markdown: {
+    remarkPlugins: [remarkRewriteLinks],
   },
   integrations: [
     react(),
