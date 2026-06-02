@@ -5,7 +5,13 @@ import { defaultLanguage, en, zh } from "~/config"
 import "~/styles/tailwind.css"
 import { langs } from "~/i18n/ui"
 
-const { title, description, ogImage, ogType = "website", noindex = false } = Astro.props
+const {
+  title,
+  description,
+  ogImage,
+  ogType = "website",
+  noindex = false,
+} = Astro.props
 const ogImageURL = new URL(ogImage, Astro.site).href
 const permalink = new URL(Astro.url.pathname, Astro.site).href
 const lang = getLangFromUrl(Astro.url)
@@ -36,7 +42,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
     {
       !noindex &&
         langs.map((langCode) => {
-          const href = new URL(`/${langCode}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`, Astro.site).href
+          const href = new URL(
+            `/${langCode}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`,
+            Astro.site,
+          ).href
           return <link rel="alternate" hreflang={langCode} href={href} />
         })
     }
@@ -45,10 +54,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
         <link
           rel="alternate"
           hreflang="x-default"
-          href={new URL(
-            `/${defaultLanguage}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`,
-            Astro.site,
-          ).href}
+          href={
+            new URL(
+              `/${defaultLanguage}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`,
+              Astro.site,
+            ).href
+          }
         />
       )
     }
@@ -60,7 +71,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
     <meta property="og:type" content={ogType} />
     <meta property="og:url" content={permalink} />
     <meta property="og:title" content={title || config.meta.title} />
-    <meta property="og:description" content={description || config.meta.description} />
+    <meta
+      property="og:description"
+      content={description || config.meta.description}
+    />
     <meta property="og:image" content={ogImageURL} />
 
     <!-- Twitter -->
@@ -68,7 +82,10 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
     <meta property="twitter:site" content="@daolanx" />
     <meta property="twitter:url" content={permalink} />
     <meta property="twitter:title" content={title || config.meta.title} />
-    <meta property="twitter:description" content={description || config.meta.description} />
+    <meta
+      property="twitter:description"
+      content={description || config.meta.description}
+    />
     <meta property="twitter:image" content={ogImageURL} />
 
     <script is:inline>

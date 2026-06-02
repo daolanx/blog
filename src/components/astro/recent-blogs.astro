@@ -17,7 +17,7 @@ const posts = allPosts.slice(0, common.latestPosts)
     {
       posts.map((post: any) => (
         <li>
-          <PostItem post={post} lang={lang} dateFormat="YYYY-MM-DD" />
+          <PostItem post={post} lang={lang} />
         </li>
       ))
     }

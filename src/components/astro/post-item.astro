@@ -34,7 +34,7 @@ if (!lang || typeof lang !== "string") {
 const postUrl = `/${lang}/posts/${post.id}/`
 
 // Format the publication date
-const formattedDate = formatDate(post.data.pubDate, dateFormat)
+const formattedDate = formatDate(post.data.pubDate, lang, dateFormat === "default" ? undefined : dateFormat)
 const datetime = post.data.pubDate.toISOString()
 ---
 

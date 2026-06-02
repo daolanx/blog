@@ -3,10 +3,7 @@ import { getPostsByLocale, formatDate } from "~/utils"
 import { common } from "~/config"
 
 export async function getStaticPaths() {
-  return [
-    { params: { lang: "en" } },
-    { params: { lang: "zh" } },
-  ]
+  return [{ params: { lang: "en" } }, { params: { lang: "zh" } }]
 }
 
 export const GET: APIRoute = async ({ params }) => {
@@ -17,9 +14,9 @@ export const GET: APIRoute = async ({ params }) => {
   const posts = await getPostsByLocale(lang)
   const recent = posts.slice(0, 10)
 
-  const data = recent.map(post => ({
+  const data = recent.map((post) => ({
     title: post.data.title,
-    date: formatDate(post.data.pubDate),
+    date: formatDate(post.data.pubDate, undefined, "YYYY-MM-DD"),
     tags: post.data.tags || [],
     url: `${common.domain}/${lang}/posts/${post.id}/`,
   }))

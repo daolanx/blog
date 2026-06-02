@@ -14,7 +14,11 @@ const config = lang === "zh" ? zh : en
 const tags = await getTagsWithCountsByLocale(lang)
 ---
 
-<MainLayout title="Tags" description={`${config.meta.title} - All tags`} ogImage="/preview.png">
+<MainLayout
+  title="Tags"
+  description={`${config.meta.title} - All tags`}
+  ogImage="/preview.png"
+>
   <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
     {
       tags.map(([tagName, tagCount]) => {

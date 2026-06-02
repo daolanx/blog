@@ -18,14 +18,17 @@ const t = useTranslations(lang)
 const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
 ---
 
-<MainLayout title={`#${tag}`} description={`Posts tagged #${tag} - ${config.meta.title}`}>
+<MainLayout
+  title={`#${tag}`}
+  description={`Posts tagged #${tag} - ${config.meta.title}`}
+>
   <div class="my-9 mt-2 text-2xl font-semibold">#{tag}</div>
 
   {
     filteredPosts.length > 0 ? (
       <ul class="space-y-4">
         {filteredPosts.map((post: any) => (
-          <PostItem post={post} lang={lang} dateFormat="YYYY-MM-DD" />
+          <PostItem post={post} lang={lang} />
         ))}
       </ul>
     ) : (

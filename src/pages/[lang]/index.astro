@@ -13,6 +13,10 @@ const lang = getLangFromUrl(Astro.url)
 const config = lang === "zh" ? zh : en
 ---
 
-<MainLayout title={config.meta.title} description={config.meta.description} ogImage="/preview.png">
+<MainLayout
+  title={config.meta.title}
+  description={config.meta.description}
+  ogImage="/preview.png"
+>
   <RecentBlogs />
 </MainLayout>

@@ -69,11 +69,11 @@ const structuredData = {
           {post.data.title}
         </h1>
         <time
-          datetime={post.data.pubDate}
+          datetime={new Date(post.data.pubDate).toISOString()}
           itemprop="datePublished"
           class="my-3 text-gray-700 dark:text-white/80"
         >
-          {formatDate(post.data.pubDate)}
+          {formatDate(post.data.pubDate, lang)}
         </time>
       </header>
 
