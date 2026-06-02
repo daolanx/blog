@@ -1,0 +1,7 @@
+---
+// In production, Vercel handles "/" → "/en/" via vercel.json redirects.
+// This page only exists for local dev (`pnpm dev`).
+import { defaultLanguage } from "~/config"
+---
+
+<meta http-equiv="refresh" content={`0;url=/${defaultLanguage}/`} />
