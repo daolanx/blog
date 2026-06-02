@@ -1,4 +1,5 @@
 ---
+import { en, zh } from "~/config"
 import { getLangFromUrl } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import { getTagsWithCountsByLocale } from "~/utils"
@@ -9,10 +10,11 @@ export function getStaticPaths() {
 }
 
 const lang = getLangFromUrl(Astro.url)
+const config = lang === "zh" ? zh : en
 const tags = await getTagsWithCountsByLocale(lang)
 ---
 
-<MainLayout ogImage="/preview.png">
+<MainLayout title="Tags" description={`${config.meta.title} - All tags`} ogImage="/preview.png">
   <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
     {
       tags.map(([tagName, tagCount]) => {
@@ -20,7 +22,7 @@ const tags = await getTagsWithCountsByLocale(lang)
           <li>
             <a
               class="inline visited:text-purple-500/90 hover:underline"
-              href={`/${lang}/tags/${encodeURIComponent(tagName)}`}
+              href={`/${lang}/tags/${encodeURIComponent(tagName)}/`}
             >
               #{tagName}
               <span class="text-sm text-gray-500 dark:text-gray-400">

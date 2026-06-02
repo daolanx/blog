@@ -14,7 +14,7 @@ const t = useTranslations(lang)
   {
     common.navigations.map((nav) => {
       const { labelKey, pathName } = nav
-      const navPath = `/${lang}${pathName ? `/${pathName}` : ""}`
+      const navPath = `/${lang}${pathName ? `/${pathName}/` : ""}`
       const navLabel = t(labelKey as any)
 
       return (

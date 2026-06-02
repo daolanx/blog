@@ -52,7 +52,9 @@ export default defineConfig({
   },
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      filter: (page) => page !== "https://daolanx.me/",
+    }),
     mdx(),
     robotsTxt(),
   ],

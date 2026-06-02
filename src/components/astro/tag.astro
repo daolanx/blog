@@ -1,4 +1,5 @@
 ---
+import { en, zh } from "~/config"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import PostItem from "./post-item.astro"
@@ -11,12 +12,13 @@ interface Props {
 const { posts, tag } = Astro.props
 
 const lang = getLangFromUrl(Astro.url)
+const config = lang === "zh" ? zh : en
 const t = useTranslations(lang)
 
 const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
 ---
 
-<MainLayout>
+<MainLayout title={`#${tag}`} description={`Posts tagged #${tag} - ${config.meta.title}`}>
   <div class="my-9 mt-2 text-2xl font-semibold">#{tag}</div>
 
   {
