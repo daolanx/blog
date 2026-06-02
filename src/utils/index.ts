@@ -30,7 +30,7 @@ export const formatDate = (
   const d = String(validDate.getDate()).padStart(2, "0")
 
   if (lang === "zh") {
-    return `${y}年${m}月${d}日`
+    return `${y}-${m}-${d}`
   }
 
   // English: "Jun 06, 2026"

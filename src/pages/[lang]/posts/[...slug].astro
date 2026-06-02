@@ -45,7 +45,9 @@ const structuredData = {
     name: "Dax",
     url: "https://daolanx.me",
   },
-  image: post.data.heroImage ? new URL(post.data.heroImage, Astro.site).href : undefined,
+  image: post.data.heroImage
+    ? new URL(post.data.heroImage, Astro.site).href
+    : undefined,
   keywords: post.data.tags.join(","),
   description: post.data.description,
 }
