@@ -1,4 +1,5 @@
 ---
+import { Train } from "lucide-react"
 import { LanguageToggle } from "~/components/react/language-toggle"
 import { ThemeToggle } from "~/components/react/theme-toggle"
 import { en, zh } from "~/config"
@@ -26,6 +27,18 @@ const config = lang === "zh" ? zh : en
   </div>
 
   <div class="flex items-center gap-6">
+    {
+      lang === "zh" && (
+        <a
+          href="https://www.travellings.cn/go.html"
+          target="_blank"
+          rel="noopener"
+          title="开往"
+        >
+          <Train />
+        </a>
+      )
+    }
     <LanguageToggle client:idle />
     <ThemeToggle client:idle />
   </div>
