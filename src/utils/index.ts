@@ -24,20 +24,18 @@ export const formatDate = (
     return format.replace(/YYYY|MM|DD/g, (match) => tokens[match])
   }
 
-  // Locale-aware formatting via Intl
+  // Locale-aware formatting
+  const y = validDate.getFullYear()
+  const m = String(validDate.getMonth() + 1).padStart(2, "0")
+  const d = String(validDate.getDate()).padStart(2, "0")
+
   if (lang === "zh") {
-    return new Intl.DateTimeFormat("zh-CN", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-    }).format(validDate)
+    return `${y}年${m}月${d}日`
   }
 
-  return new Intl.DateTimeFormat("en-US", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-  }).format(validDate)
+  // English: "Jun 06, 2026"
+  const month = validDate.toLocaleString("en-US", { month: "short" })
+  return `${month} ${d}, ${y}`
 }
 
 export const getPostsByLocale = async (locale: string) => {
