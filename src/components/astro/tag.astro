@@ -16,11 +16,13 @@ const config = lang === "zh" ? zh : en
 const t = useTranslations(lang)
 
 const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
+const isThin = filteredPosts.length < 3
 ---
 
 <MainLayout
   title={`#${tag}`}
   description={`Posts tagged #${tag} - ${config.meta.title}`}
+  noindex={isThin}
 >
   <div class="my-9 mt-2 text-2xl font-semibold">#{tag}</div>
 

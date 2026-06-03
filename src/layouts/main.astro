@@ -14,8 +14,7 @@ const {
   updatedDate,
   tags,
 } = Astro.props
-const filename = Astro.url.pathname.split("/").filter(Boolean).pop() ?? ""
-const openGraphImage = !ogImage ? `/og/${filename}.png` : ogImage
+const openGraphImage = !ogImage ? "/preview.png" : ogImage
 ---
 
 <BaseLayout

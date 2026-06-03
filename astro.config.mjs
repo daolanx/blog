@@ -55,7 +55,11 @@ export default defineConfig({
   integrations: [
     react(),
     sitemap({
-      filter: (page) => page !== "https://daolanx.me/",
+      filter: (page) =>
+        page !== "https://daolanx.me/" &&
+        !page.includes("/rss.xml") &&
+        !page.includes("/api/") &&
+        !page.includes("/og/"),
     }),
     mdx(),
     robotsTxt(),
