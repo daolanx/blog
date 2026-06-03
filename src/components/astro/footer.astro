@@ -19,6 +19,7 @@ const currentYear = new Date().getFullYear()
     <a
       class="hover:underline"
       target="_blank"
+      rel="noopener noreferrer"
       href={"/" + lang + "/rss.xml"}
       aria-label="RSS Feed"
     >
@@ -30,6 +31,7 @@ const currentYear = new Date().getFullYear()
           <a
             class="hover:underline"
             target="_blank"
+            rel="noopener noreferrer"
             href={item.link}
             aria-label={item.label}
           >
@@ -45,7 +47,7 @@ const currentYear = new Date().getFullYear()
       target="_blank"
       class="hover:underline"
       aria-label="Astro Air"
-      rel="nofollow"
+      rel="noopener noreferrer nofollow"
       href="https://github.com/sun0225SUN/astro-air"
     >
       Astro Air

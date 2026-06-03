@@ -5,6 +5,12 @@ article code {
   color: #0369a1;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root.dark article code {
+    color: #7dd3fc;
+  }
+}
+
 article code::before,
 article code::after {
   content: none !important;
