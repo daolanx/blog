@@ -29,7 +29,8 @@ const ogLocaleAlternate = lang === "zh" ? "en_US" : "zh_CN"
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" type="image/png" href={config.meta.favicon} />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <title>
       {
         title
@@ -133,7 +134,9 @@ const ogLocaleAlternate = lang === "zh" ? "en_US" : "zh_CN"
     <script
       defer
       src="https://cloud.umami.is/script.js"
-      data-website-id="cb2062a0-008d-4ce2-b29e-b22f43f564d6"></script>
+      data-website-id="cb2062a0-008d-4ce2-b29e-b22f43f564d6"
+      integrity="sha384-XIoKniD4y5+iahq2/CkYT+GAABKWaS/0hQl+1HKPL0Y9tRFxG5Z8BWQul4tL07IW"
+      crossorigin="anonymous"></script>
     {
       config.googleAnalyticsId && (
         <GoogleAnalytics id={config.googleAnalyticsId} />

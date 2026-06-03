@@ -11,5 +11,14 @@ export function LanguageToggle() {
     window.location.href = newPath
   }
 
-  return <Languages className="cursor-pointer" onClick={handleLanguageToggle} />
+  return (
+    <button
+      onClick={handleLanguageToggle}
+      aria-label="Toggle language"
+      title="Toggle language"
+      className="cursor-pointer"
+    >
+      <Languages />
+    </button>
+  )
 }

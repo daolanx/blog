@@ -48,7 +48,7 @@ const structuredData = {
   image: post.data.heroImage
     ? new URL(post.data.heroImage, Astro.site).href
     : undefined,
-  keywords: post.data.tags.join(","),
+  keywords: post.data.tags?.join(",") || "",
   description: post.data.description,
 }
 ---
@@ -57,7 +57,9 @@ const structuredData = {
   {...post.data}
   ogType="article"
   pubDate={new Date(post.data.pubDate).toISOString()}
-  updatedDate={post.data.updatedDate ? new Date(post.data.updatedDate).toISOString() : undefined}
+  updatedDate={post.data.updatedDate
+    ? new Date(post.data.updatedDate).toISOString()
+    : undefined}
   tags={post.data.tags?.join(",")}
 >
   <script
@@ -69,29 +71,26 @@ const structuredData = {
   <div class="mx-auto flex w-full max-w-7xl gap-8 px-4 lg:px-6">
     <article
       class="prose dark:prose-invert w-full max-w-4xl flex-1 overflow-hidden"
-      itemscope
-      itemtype="https://schema.org/BlogPosting"
     >
       <header class="flex flex-col gap-2">
-        <h1 class="!my-0 text-3xl font-semibold" itemprop="headline">
+        <h1 class="!my-0 text-3xl font-semibold">
           {post.data.title}
         </h1>
         <time
           datetime={new Date(post.data.pubDate).toISOString()}
-          itemprop="datePublished"
           class="my-3 text-gray-700 dark:text-white/80"
         >
           {formatDate(post.data.pubDate, lang)}
         </time>
       </header>
 
-      <main class="my-6" itemprop="articleBody">
+      <main class="my-6">
         <Content />
       </main>
 
       <aside class="space-x-3 pb-10 text-sm text-gray-500">
         {
-          post.data.tags.map((tag: string) => (
+          post.data.tags?.map((tag: string) => (
             <a href={`/${lang}/tags/${tag}`} class="no-underline" rel="tag">
               <span class="inline-block hover:scale-105">#{tag}</span>
             </a>
