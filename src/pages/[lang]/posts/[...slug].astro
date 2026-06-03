@@ -91,7 +91,11 @@ const structuredData = {
       <aside class="space-x-3 pb-10 text-sm text-gray-500">
         {
           post.data.tags?.map((tag: string) => (
-            <a href={`/${lang}/tags/${encodeURIComponent(tag)}/`} class="no-underline" rel="tag">
+            <a
+              href={`/${lang}/tags/${encodeURIComponent(tag)}/`}
+              class="no-underline"
+              rel="tag"
+            >
               <span class="inline-block hover:scale-105">#{tag}</span>
             </a>
           ))

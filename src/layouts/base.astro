@@ -46,7 +46,8 @@ const ogLocaleAlternate = lang === "zh" ? "en_US" : "zh_CN"
     <!-- Canonical & hreflang -->
     <link rel="canonical" href={canonicalURL} />
     {
-      !noindex && /^\/(en|zh)\//.test(Astro.url.pathname) &&
+      !noindex &&
+        /^\/(en|zh)\//.test(Astro.url.pathname) &&
         langs.map((langCode) => {
           const href = new URL(
             `/${langCode}${Astro.url.pathname.replace(/^\/(en|zh)/, "")}`,
