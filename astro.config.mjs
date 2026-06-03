@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite"
 import { defineConfig } from "astro/config"
 
 import robotsTxt from "astro-robots-txt"
+import { rehypeImgLazy } from "./src/utils/rehype-img-lazy"
 import { remarkRewriteLinks } from "./src/utils/remark-rewrite-links"
 
 // https://astro.build/config
@@ -49,6 +50,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [remarkRewriteLinks],
+    rehypePlugins: [rehypeImgLazy],
   },
   integrations: [
     react(),

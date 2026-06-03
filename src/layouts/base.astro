@@ -11,12 +11,17 @@ const {
   ogImage,
   ogType = "website",
   noindex = false,
+  pubDate,
+  updatedDate,
+  tags,
 } = Astro.props
 const ogImageURL = new URL(ogImage, Astro.site).href
 const permalink = new URL(Astro.url.pathname, Astro.site).href
 const lang = getLangFromUrl(Astro.url)
 const config = lang === "zh" ? zh : en
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
+const ogLocale = lang === "zh" ? "zh_CN" : "en_US"
+const ogLocaleAlternate = lang === "zh" ? "en_US" : "zh_CN"
 ---
 
 <!doctype html>
@@ -64,8 +69,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
       )
     }
 
-    <!-- DNS 预解析和预连接 -->
+    <!-- DNS prefetch and preconnect -->
     <link rel="preconnect" href="https://www.google-analytics.com" />
+    <link rel="preconnect" href="https://cloud.umami.is" />
+
+    <!-- RSS autodiscovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title={config.meta.title}
+      href={`${Astro.site}${lang}/rss.xml`}
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content={ogType} />
@@ -76,6 +90,24 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site).href
       content={description || config.meta.description}
     />
     <meta property="og:image" content={ogImageURL} />
+    <meta property="og:locale" content={ogLocale} />
+    <meta property="og:locale:alternate" content={ogLocaleAlternate} />
+    <meta property="og:site_name" content={config.siteName} />
+    {
+      ogType === "article" && pubDate && (
+        <meta property="article:published_time" content={pubDate} />
+      )
+    }
+    {
+      ogType === "article" && updatedDate && (
+        <meta property="article:modified_time" content={updatedDate} />
+      )
+    }
+    {
+      ogType === "article" && tags && (
+        <meta property="article:tag" content={tags} />
+      )
+    }
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />

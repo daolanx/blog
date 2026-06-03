@@ -53,7 +53,13 @@ const structuredData = {
 }
 ---
 
-<MainLayout {...post.data} ogType="article">
+<MainLayout
+  {...post.data}
+  ogType="article"
+  pubDate={new Date(post.data.pubDate).toISOString()}
+  updatedDate={post.data.updatedDate ? new Date(post.data.updatedDate).toISOString() : undefined}
+  tags={post.data.tags?.join(",")}
+>
   <script
     is:inline
     type="application/ld+json"

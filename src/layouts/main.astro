@@ -4,7 +4,7 @@ import Header from "~/components/astro/header.astro"
 import Navigation from "~/components/astro/nav.astro"
 import BaseLayout from "~/layouts/base.astro"
 
-const { title, description, ogImage, noindex } = Astro.props
+const { title, description, ogImage, noindex, ogType, pubDate, updatedDate, tags } = Astro.props
 const filename = Astro.url.pathname.split("/").filter(Boolean).pop() ?? ""
 const openGraphImage = !ogImage ? `/og/${filename}.png` : ogImage
 ---
@@ -14,6 +14,10 @@ const openGraphImage = !ogImage ? `/og/${filename}.png` : ogImage
   description={description}
   ogImage={openGraphImage}
   noindex={noindex}
+  ogType={ogType}
+  pubDate={pubDate}
+  updatedDate={updatedDate}
+  tags={tags}
 >
   <Header />
   <Navigation />
