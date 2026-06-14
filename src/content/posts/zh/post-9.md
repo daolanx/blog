@@ -4,7 +4,7 @@ pubDate: 2025-12-17
 updatedDate: 2025-12-17
 author: "Dax"
 tags: ["Next.js"]
-description: ""
+description: "Next.js 框架初学感受，解析其架构设计、路由系统以及为什么它非常适合前端开发者上手。"
 ---
 
 [Next.js](https://nextjs.org/) 是目前市面上非常流行的 Node.js Web 框架。跟着 [Codevolution 的教程](https://youtu.be/k7o9R6eaSes?si=Uz-0fPLD01Q5VDkc) 操作一遍后，觉得它的流行确实有道理。Next.js 是非常适合前端开发者的 Web 框架，优秀的技术方案不仅能大幅提升生产力事半功倍，其良好的架构和编程范式，还能帮助我们在建立更准确、简洁的场景认知。

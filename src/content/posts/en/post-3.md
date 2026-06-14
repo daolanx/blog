@@ -2,7 +2,7 @@
 title: "Deploy SiYuan Notes on Synology NAS + External HTTPS Access via Cloudflare Tunnel"
 pubDate: 2024-10-29
 updatedDate: 2024-10-29
-description: ""
+description: "Step-by-step guide to deploying SiYuan Notes on Synology NAS with external HTTPS access via Cloudflare Tunnel for secure remote access."
 author: "Dax"
 tags: ["Synology", "NAS", "Cloudflare", "SiYuan"]
 ---

@@ -4,7 +4,7 @@ pubDate: 2025-10-22
 updatedDate: 2025-10-22
 author: "Dax"
 tags: ["GAP"]
-description: ""
+description: "Exploring the significance of taking a GAP year for physical and mental recovery, self-discovery, and gaining a fresh perspective on life."
 ---
 
 Having been away from the workplace for more than a year, I've realized that making real changes truly requires an extended break, and this period has its own profound significance.

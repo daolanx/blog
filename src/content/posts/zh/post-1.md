@@ -2,7 +2,7 @@
 title: "再见蚂蚁，海阔天空"
 pubDate: 2024-06-14
 updatedDate: 2024-06-14
-description: ""
+description: "回顾在蚂蚁集团十年的职业旅程，从淘宝卡日曲到体验技术部再到 OceanBase，以及离开后的感悟与思考。"
 author: "Dax"
 tags: ["蚂蚁"]
 ---

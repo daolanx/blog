@@ -4,7 +4,7 @@ pubDate: 2025-10-22
 updatedDate: 2025-10-22
 author: "Dax"
 tags: ["GAP"]
-description: ""
+description: "离开职场一年后，探讨 GAP 年对于身心恢复、自我认知和重新审视人生方向的重要意义。"
 ---
 
 离开职场差不多一年多，发现要做出改变，还真需要长休一段时间，其中自有意义。

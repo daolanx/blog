@@ -4,7 +4,7 @@ pubDate: 2026-01-30
 updatedDate: 2026-01-30
 author: "Dax"
 tags: ["SWR", "React"]
-description: ""
+description: "SWR 实用指南：一个极简的 React 数据请求 Hook，内置缓存、重新验证和请求去重，打造极速 UI。"
 ---
 
 

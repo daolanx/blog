@@ -4,7 +4,7 @@ pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Dax"
 tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "性能优化"]
-description: ""
+description: "将 Next.js 静态资源迁移到 Cloudflare R2 的实战教程，提升性能并显著降低 Vercel 带宽成本。"
 ---
 
 先看效果，站点部署在 Vercel 上面，静态资源和图片都是存储在 R2 上，通过 R2 配置的 **assets** 子域名访问。

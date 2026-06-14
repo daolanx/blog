@@ -4,7 +4,7 @@ pubDate: 2026-06-02
 updatedDate: 2026-06-02
 author: "Dax"
 tags: ["Next.js", "Stitch", "Cloudflare", "OpenNext"]
-description: ""
+description: "Building a personal homepage using Stitch, Next.js and OpenNext deployed on Cloudflare, featuring AI-powered design and development workflow."
 ---
 
 Actually, an even earlier version of my personal homepage looked like the one below. At the time, it was mostly a toy for me to experiment with AI programming when I first started, and it basically had no functionality.

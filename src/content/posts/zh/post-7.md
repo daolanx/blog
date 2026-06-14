@@ -4,7 +4,7 @@ pubDate: 2025-11-05
 updatedDate: 2026-01-14
 author: "Dax"
 tags: ["职业规划"]
-description: ""
+description: "离职后重新审视前端职业选择，探讨在 AI 时代开发者角色的演变和继续从事前端开发的理由。"
 ---
 
 ## 一、再次思考问题的契机

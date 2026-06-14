@@ -2,7 +2,7 @@
 title: "用 ESP32 和电子墨水屏打造 AI 生成图片的低功耗自动更新个性化日历"
 pubDate: 2024-10-14
 updatedDate: 2024-10-14
-description: ""
+description: "使用 ESP32 和电子墨水屏打造 AI 生成图片的低功耗自动更新个性化日历，每日生成不可保存的独特图文内容。"
 author: "Dax"
 tags: ["ESP32", "电子墨水屏", "AI"]
 ---

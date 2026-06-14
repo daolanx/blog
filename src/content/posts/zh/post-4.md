@@ -2,7 +2,7 @@
 title: "2024下半年：求职、独立开发、投资、带娃"
 pubDate: 2025-01-28
 updatedDate: 2025-01-28
-description: ""
+description: "2024下半年个人总结，涵盖求职经历、独立开发探索、投资理财和带娃生活的感悟与反思。"
 author: "Dax"
 tags: ["职业规划"]
 ---

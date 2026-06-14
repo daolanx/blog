@@ -4,7 +4,7 @@ pubDate: 2026-02-18
 updatedDate: 2026-02-18
 author: "Dax"
 tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "性能优化"]
-description: ""
+description: "使用 Cloudflare R2 + Worker 代理实现静态资产同域服务，达成 Lighthouse 全项满分的极致性能优化。"
 ---
 
 ## 1. 效果概述

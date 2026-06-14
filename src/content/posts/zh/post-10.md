@@ -4,7 +4,7 @@ pubDate: 2025-12-19
 updatedDate: 2025-12-19
 author: "Dax"
 tags: ["VSCode", "Roo Code", "Mimo", "AI", "IDE"]
-description: ""
+description: "使用 VSCode + Roo Code + Mimo 搭建免费 AI IDE，作为 Github Copilot 的低成本替代方案。"
 ---
 
 ### 一、为什么不再用 Github Copilot？

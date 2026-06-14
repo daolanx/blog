@@ -4,7 +4,7 @@ pubDate: 2026-06-02
 updatedDate: 2026-06-02
 author: "Dax"
 tags: ["Next.js", "Stitch", "Cloudflare", "OpenNext"]
-description: ""
+description: "使用 Stitch + Next.js + OpenNext 制作个人主页，结合 AI 设计和开发工作流的完整实践。"
 ---
 
 其实之前更早一版本个人主页效果如下，当时主要是刚接触 AI 编程尝试的玩具，基本不具备功能性。

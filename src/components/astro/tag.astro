@@ -16,7 +16,7 @@ const config = lang === "zh" ? zh : en
 const t = useTranslations(lang)
 
 const filteredPosts = posts.filter((post: any) => post.data.tags?.includes(tag))
-const isThin = filteredPosts.length < 3
+const isThin = filteredPosts.length < 5
 ---
 
 <MainLayout

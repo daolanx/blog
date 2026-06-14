@@ -4,7 +4,7 @@ pubDate: 2026-01-30
 updatedDate: 2026-01-30
 author: "Dax"
 tags: ["SWR", "React"]
-description: ""
+description: "A practical guide to SWR, a minimalist React data fetching hook with built-in caching, revalidation, and request deduplication for fast UIs."
 ---
 
 

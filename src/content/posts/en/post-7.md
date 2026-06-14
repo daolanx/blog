@@ -4,7 +4,7 @@ pubDate: 2025-11-05
 updatedDate: 2026-01-14
 author: "Dax"
 tags: ["Career Planning"]
-description: ""
+description: "Why I chose to continue front-end development after years of corporate work, examining the evolving role of developers in the AI era."
 ---
 
 ## I. The Trigger for Rethinking

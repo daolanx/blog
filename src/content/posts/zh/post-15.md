@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-10
 updatedDate: 2026-03-10
 tags: ["VSCode", "Claude Code", "OpenClaw"]
-description: ""
+description: "探讨编程方式的质变：如何使用 VSCode、Claude Code 和 OpenClaw 组合打造高效的独立开发工作流。"
 ---
 
 虽然从计算机编程的演进看，从二进制开关到汇编、高级语言，再到如今的自然语言，技术平权与降低编程难度的趋势是一致的。但仅就这两年观察，编程方式正在发生质变。

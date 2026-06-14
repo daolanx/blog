@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-26
 updatedDate: 2026-03-26
 tags: ["Stitch", "Claude Code", "Figma", "MVP"]
-description: ""
+description: "使用 Google Stitch 结合 Claude Code 和 Figma MCP，从想法到代码的高效 MVP 开发流程。"
 ---
 
 # 1. 使用效果

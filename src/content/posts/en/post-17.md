@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-22
 updatedDate: 2026-03-22
 tags: ["The North Star"]
-description: ""
+description: "A deep conversation with Gemini exploring the value of programmers and humans in the AI era, discussing the future of software development."
 ---
 
 > The AI development trend is clearly larger than expected. I thought it was just an enhanced version of autocomplete, but the arrival of Agents has changed everything, and the mode of production is undergoing a great change. As a frontend practitioner, the excitement lies in being less dependent on a company’s production infrastructure to create and publish web pages independently; the anxiety lies in the fact that AI has also lowered the programming threshold, allowing ordinary people to write and publish web pages without knowing code. To look at all this more objectively and rationally, I decided to talk with Gemini about these topics. Although this is content from a Gemini conversation, based on the historical data of multiple rounds of dialogue, its answers appear brilliant and shocking.

@@ -4,7 +4,7 @@ pubDate: 2026-05-27
 updatedDate: 2026-05-27
 author: "Dax"
 tags: ["Next.js", "PayloadCMS"]
-description: ""
+description: "Integrating PayloadCMS with Next.js for headless content management with internationalization support and image processing capabilities."
 ---
 
 [PayloadCMS](https://payloadcms.com/) is a highly recommended Headless CMS in the Next.js community. I have recently completed its integration for managing the Demo Gallery site, enabling both internationalized (i18n) content management and robust support for image uploading and processing.

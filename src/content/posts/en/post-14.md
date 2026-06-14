@@ -4,7 +4,7 @@ pubDate: 2026-02-25
 updatedDate: 2026-02-25
 author: "Dax"
 tags: ["Next.js", "Fumadocs", "Cloudflare", "Worker", "OpenNext"]
-description: ""
+description: "Deploying Fumadocs documentation framework on Cloudflare Workers with R2 for a near-free, production-ready docs site with global edge delivery."
 ---
 
 # 1. Why Fumadocs + Cloudflare Workers & R2
