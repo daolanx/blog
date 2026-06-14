@@ -1,9 +1,9 @@
 ---
 import { render } from "astro:content"
+import PostItem from "~/components/astro/post-item.astro"
 import { langs } from "~/i18n/ui"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
-import PostItem from "~/components/astro/post-item.astro"
 import "~/styles/post.css"
 import { formatDate, getPostsByLocale } from "~/utils"
 
@@ -117,12 +117,14 @@ const structuredData = {
 
       {
         relatedPosts.length > 0 && (
-          <section class="border-t border-gray-200 pt-8 dark:border-gray-700">
-            <h2 class="mb-4 text-xl font-semibold">{t("post.related")}</h2>
-            <ul>
+          <section class="mt-8 border-t border-gray-200 pt-6 dark:border-gray-700">
+            <h2 class="mb-3 text-lg font-semibold text-gray-700 dark:text-gray-300">
+              {t("post.related")}
+            </h2>
+            <ul class="divide-y divide-gray-100 dark:divide-gray-800">
               {relatedPosts.map((relatedPost: any) => (
                 <li>
-                  <PostItem post={relatedPost} lang={lang} />
+                  <PostItem post={relatedPost} lang={lang} compact />
                 </li>
               ))}
             </ul>
