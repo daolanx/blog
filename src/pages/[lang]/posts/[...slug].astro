@@ -3,6 +3,7 @@ import { render } from "astro:content"
 import { langs } from "~/i18n/ui"
 import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
+import PostItem from "~/components/astro/post-item.astro"
 import "~/styles/post.css"
 import { formatDate, getPostsByLocale } from "~/utils"
 
@@ -13,7 +14,7 @@ export async function getStaticPaths() {
     const posts = await getPostsByLocale(lang)
     const paths = posts.map((post: any) => ({
       params: { lang, slug: post.id },
-      props: { post },
+      props: { post, allPosts: posts },
     }))
     allPaths.push(...paths)
   }
@@ -23,11 +24,20 @@ export async function getStaticPaths() {
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { post } = Astro.props
+const { post, allPosts } = Astro.props
 const { Content, headings } = await render(post)
 const tocHeadings = headings.filter(
   (heading) => heading.depth === 1 || heading.depth === 2,
 )
+
+// Find related posts (same tags, exclude current)
+const relatedPosts = allPosts
+  .filter(
+    (p: any) =>
+      p.id !== post.id &&
+      p.data.tags?.some((tag: string) => post.data.tags?.includes(tag)),
+  )
+  .slice(0, 3)
 
 // Generate structured data for SEO
 const structuredData = {
@@ -50,6 +60,8 @@ const structuredData = {
     : undefined,
   keywords: post.data.tags?.join(",") || "",
   description: post.data.description,
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  wordCount: post.body?.split(/\s+/).length || 0,
 }
 ---
 
@@ -102,6 +114,21 @@ const structuredData = {
           ))
         }
       </aside>
+
+      {
+        relatedPosts.length > 0 && (
+          <section class="border-t border-gray-200 pt-8 dark:border-gray-700">
+            <h2 class="mb-4 text-xl font-semibold">{t("post.related")}</h2>
+            <ul>
+              {relatedPosts.map((relatedPost: any) => (
+                <li>
+                  <PostItem post={relatedPost} lang={lang} />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
     </article>
 
     {

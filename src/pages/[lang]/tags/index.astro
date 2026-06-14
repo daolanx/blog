@@ -20,7 +20,7 @@ const tags = await getTagsWithCountsByLocale(lang)
   description={`${config.meta.title} - All tags`}
   ogImage="/preview.png"
 >
-  <p class="sr-only">{t("tags.intro")}</p>
+  <p class="mb-8 text-sm text-gray-500 dark:text-gray-400">{t("tags.intro")}</p>
   <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
     {
       tags.map(([tagName, tagCount]) => {
