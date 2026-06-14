@@ -4,7 +4,7 @@ pubDate: 2026-02-25
 updatedDate: 2026-02-25
 author: "Dax"
 tags: ["Next.js", "Fumadocs", "Cloudflare", "Worker", "OpenNext"]
-description: ""
+description: "在 Cloudflare Workers 上部署 Fumadocs 文档框架，打造近乎免费的生产级文档站点，支持全球边缘节点分发。"
 ---
 
 # 1. 为什么是 Fumadocs + Cloudflare Workers & R2

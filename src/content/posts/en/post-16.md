@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-19
 updatedDate: 2026-03-19
 tags: ["Claude Code", "Figma"]
-description: ""
+description: "A practical guide to design-to-code workflow using Claude Code with Figma MCP integration for automated UI implementation from Figma designs."
 ---
 
 ![](/images/posts/16/14.webp)

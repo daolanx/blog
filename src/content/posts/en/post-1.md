@@ -2,7 +2,7 @@
 title: "Farewell Ant, Boundless Sea And Sky"
 pubDate: 2024-06-14
 updatedDate: 2024-06-14
-description: ""
+description: "Reflections on leaving Ant Group after 10 years, covering my journey through Taobao, Ant Experience Technology, and OceanBase, and the lessons learned along the way."
 author: "Dax"
 tags: ["Ant"]
 ---

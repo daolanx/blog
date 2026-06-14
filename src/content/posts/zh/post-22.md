@@ -4,7 +4,7 @@ pubDate: 2026-06-08
 updatedDate: 2026-06-08
 author: "Dax"
 tags: ["Resend", "Cloudflare", "Gmail"]
-description: ""
+description: "使用 Resend + Cloudflare + Gmail 实现免费专属域名邮箱，独立开发者的高性价比邮件解决方案。"
 ---
 
 从产品角度看，拥有一个专属域名的邮箱是十分必要的，这比使用个人邮箱显得更加专业和正式。虽然 Google Workspace 和 Microsoft 365 提供了完整专业的企业邮箱能力，但作为独立开发者我们需要精打细算，根据产品所处阶段，其实有更多高性价比的方案可以选择。

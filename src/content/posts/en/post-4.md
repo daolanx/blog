@@ -2,7 +2,7 @@
 title: "2024 H2: Job Hunt, Indie Dev, Invest, And Babysitting"
 pubDate: 2025-01-28
 updatedDate: 2025-01-28
-description: ""
+description: "A personal reflection on job hunting, indie development, investing, and parenting during the second half of 2024 after leaving the corporate world."
 author: "Dax"
 tags: ["Career Planning"]
 ---

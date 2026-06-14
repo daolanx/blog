@@ -4,7 +4,7 @@ pubDate: 2025-12-19
 updatedDate: 2025-12-19
 author: "Dax"
 tags: ["VSCode", "Roo Code", "Mimo", "AI", "IDE"]
-description: ""
+description: "Setting up a free AI-powered IDE using VSCode, Roo Code, and Mimo as an alternative to Github Copilot for cost-effective AI-assisted coding."
 ---
 
 ### I. Why Stop Using Github Copilot?

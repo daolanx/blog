@@ -4,7 +4,7 @@ pubDate: 2025-11-30
 updatedDate: 2025-11-30
 author: "Dax"
 tags: ["Astro", "Vercel", "Cloudflare"]
-description: ""
+description: "使用 Astro 框架搭建博客，部署到 Vercel 并配置 Cloudflare DNS 代理的完整实践指南。"
 ---
 
 ### 一、为什么用 Astro 框架？

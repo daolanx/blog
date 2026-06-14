@@ -4,7 +4,7 @@ pubDate: 2025-11-30
 updatedDate: 2025-11-30
 author: "Dax"
 tags: ["Astro", "Vercel", "Cloudflare"]
-description: ""
+description: "Setting up a blog using the Astro framework, deploying to Vercel, and configuring Cloudflare DNS proxy for optimal performance."
 ---
 
 ### I. Why Choose Astro Framework?

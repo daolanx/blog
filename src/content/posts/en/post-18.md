@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-26
 updatedDate: 2026-03-26
 tags: ["Stitch", "Claude Code", "Figma", "MVP"]
-description: ""
+description: "Using Google Stitch with Claude Code and Figma MCP to transform ideas into working code with dramatically improved design quality."
 ---
 # 1. The Results
 First, let’s jump straight to the results. Since I started using [Stitch](https://stitch.withgoogle.com/), the improvement in overall design quality has been massive.

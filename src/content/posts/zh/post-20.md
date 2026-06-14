@@ -4,7 +4,7 @@ pubDate: 2026-05-27
 updatedDate: 2026-05-27
 author: "Dax"
 tags: ["Next.js", "PayloadCMS"]
-description: ""
+description: "将 PayloadCMS 无头 CMS 接入 Next.js，实现国际化内容管理和图片资源上传处理的完整方案。"
 ---
 
 [PayloadCMS](https://payloadcms.com/) 是目前 Next.js 社区非常推荐的无头（Headless）CMS 管理系统。目前我已经完成将其接入并用于 Demo Gallery 的站点管理，不仅实现了国际化（i18n）文案管理，还完美支持了图片资源的上传与处理。

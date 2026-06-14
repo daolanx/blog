@@ -4,7 +4,7 @@ author: "Dax"
 pubDate: 2026-03-19
 updatedDate: 2026-03-19
 tags: ["Claude Code", "Figma"]
-description: ""
+description: "使用 Claude Code 结合 Figma MCP 实现设计稿自动转代码的实践指南，大幅提升 UI 开发效率。"
 ---
 
 ![](/images/posts/16/14.webp)

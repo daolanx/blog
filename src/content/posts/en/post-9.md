@@ -4,7 +4,7 @@ pubDate: 2025-12-17
 updatedDate: 2025-12-17
 author: "Dax"
 tags: ["Next.js"]
-description: ""
+description: "First impressions of Next.js framework, covering its architecture, routing system, and why it's an excellent choice for front-end developers."
 ---
 
 [Next.js](https://nextjs.org/) is currently a very popular Node.js Web framework on the market. After going through [Codevolution's tutorial](https://youtu.be/k7o9R6eaSes?si=Uz-0fPLD01Q5VDkc), my feeling is: its popularity is well-deserved. Next.js is a Web framework that is exceptionally well-suited for frontend developers. An excellent technical solution not only significantly boosts productivity—allowing you to do more with less—but its sound architecture and programming paradigm also help us establish a more accurate and concise cognitive understanding of relevant scenarios.

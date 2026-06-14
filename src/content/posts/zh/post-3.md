@@ -2,7 +2,7 @@
 title: "群晖 NAS 部署思源笔记 + Cloudflare Tunnel 外网 HTTPS 访问"
 pubDate: 2024-10-29
 updatedDate: 2024-10-29
-description: ""
+description: "在群晖 NAS 上部署思源笔记并通过 Cloudflare Tunnel 实现外网 HTTPS 安全访问的完整教程。"
 author: "Dax"
 tags: ["群晖", "NAS", "Cloudflare", "思源笔记"]
 ---

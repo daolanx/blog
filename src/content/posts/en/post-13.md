@@ -4,7 +4,7 @@ pubDate: 2026-02-18
 updatedDate: 2026-02-18
 author: "Dax"
 tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "Performance"]
-description: ""
+description: "Advanced optimization: serving static assets from the same domain using Cloudflare R2 + Worker proxy for perfect Lighthouse scores."
 ---
 
 ## 1. Effect Overview

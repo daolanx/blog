@@ -4,7 +4,7 @@ pubDate: 2026-06-08
 updatedDate: 2026-06-08
 author: "Dax"
 tags: ["Resend", "Cloudflare", "Gmail"]
-description: ""
+description: "Setting up a free custom domain email using Resend + Cloudflare + Gmail for indie developers who need professional email without the cost."
 ---
 
 From a product perspective, having an email address with a custom domain is essential—it looks far more professional and formal than a personal email. While Google Workspace and Microsoft 365 offer complete and professional enterprise email capabilities, as indie developers, we need to be budget-conscious. Depending on the product's current stage, there are plenty of highly cost-effective alternatives available.

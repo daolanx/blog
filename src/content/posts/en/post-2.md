@@ -2,7 +2,7 @@
 title: "ESP32 and AI-Powered Personalized Calendar with E-ink Display"
 pubDate: 2024-10-14
 updatedDate: 2024-10-14
-description: ""
+description: "Building an ESP32-powered e-ink AI calendar that displays unique AI-generated content daily, with ultra-low power consumption and no power switch."
 author: "Dax"
 tags: ["ESP32", "Elink", "AI"]
 ---

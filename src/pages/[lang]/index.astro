@@ -1,7 +1,7 @@
 ---
 import RecentBlogs from "~/components/astro/recent-blogs.astro"
 import { en, zh } from "~/config"
-import { getLangFromUrl } from "~/i18n/utils"
+import { getLangFromUrl, useTranslations } from "~/i18n/utils"
 import MainLayout from "~/layouts/main.astro"
 import { getLanguagePaths } from "~/utils/langs"
 
@@ -11,6 +11,7 @@ export function getStaticPaths() {
 
 const lang = getLangFromUrl(Astro.url)
 const config = lang === "zh" ? zh : en
+const t = useTranslations(lang)
 ---
 
 <MainLayout
@@ -18,5 +19,6 @@ const config = lang === "zh" ? zh : en
   description={config.meta.description}
   ogImage="/preview.png"
 >
+  <p class="sr-only">{t("blog.intro")}</p>
   <RecentBlogs />
 </MainLayout>

@@ -4,7 +4,7 @@ pubDate: 2025-08-18
 updatedDate: 2025-08-18
 author: "Dax"
 tags: ["Stay-at-Home Dad", "Family", "The Ultimate Question"]
-description: ""
+description: "Lessons learned from becoming a full-time stay-at-home dad, reflecting on work-life balance, presence, and what truly matters in life."
 ---
 
 Another half a year has passed, and after a few family twists and turns, I am now a full-fledged stay-at-home dad, in charge of meals, daily routines, and figuring out how to make money. The most important thing on my mind right now is waiting for my child to start kindergarten in a month.

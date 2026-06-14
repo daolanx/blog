@@ -4,7 +4,7 @@ pubDate: 2026-05-06
 updatedDate: 2026-05-06
 author: "Dax"
 tags: ["Next.js", "Cloudflare", "Vercel", "GitHub",  "性能优化"]
-description: ""
+description: "Next.js + Cloudflare R2 + Proxy 静态资源管理方案完整总结，独立开发者的性能与成本最优解。"
 ---
 
 # 1. 为什么研究这个方案？
