@@ -25,3 +25,9 @@ pnpm-debug.log*
 
 # astro tmp pages
 astro_tmp_pages_*
+
+# mimocode plans
+.mimocode/
+
+# claude
+.claude/

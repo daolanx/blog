@@ -27,6 +27,7 @@ export const ui = {
     "tags.intro":
       "Browse articles by topic. Each tag groups related posts for easy discovery of content that matches your interests.",
     "post.toc": "Contents",
+    "post.related": "Related Posts",
   },
   zh: {
     "author.name": "Dax",
@@ -47,5 +48,6 @@ export const ui = {
     "tags.intro":
       "按主题浏览文章，每个标签聚合相关文章，方便发现感兴趣的内容。",
     "post.toc": "目录",
+    "post.related": "相关文章",
   },
 } as const

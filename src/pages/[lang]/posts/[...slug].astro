@@ -13,7 +13,7 @@ export async function getStaticPaths() {
     const posts = await getPostsByLocale(lang)
     const paths = posts.map((post: any) => ({
       params: { lang, slug: post.id },
-      props: { post },
+      props: { post, allPosts: posts },
     }))
     allPaths.push(...paths)
   }
@@ -23,11 +23,20 @@ export async function getStaticPaths() {
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
-const { post } = Astro.props
+const { post, allPosts } = Astro.props
 const { Content, headings } = await render(post)
 const tocHeadings = headings.filter(
   (heading) => heading.depth === 1 || heading.depth === 2,
 )
+
+// Find related posts (same tags, exclude current)
+const relatedPosts = allPosts
+  .filter(
+    (p: any) =>
+      p.id !== post.id &&
+      p.data.tags?.some((tag: string) => post.data.tags?.includes(tag)),
+  )
+  .slice(0, 3)
 
 // Generate structured data for SEO
 const structuredData = {
@@ -50,6 +59,8 @@ const structuredData = {
     : undefined,
   keywords: post.data.tags?.join(",") || "",
   description: post.data.description,
+  mainEntityOfPage: new URL(Astro.url.pathname, Astro.site).href,
+  wordCount: post.body?.split(/\s+/).length || 0,
 }
 ---
 
@@ -102,6 +113,32 @@ const structuredData = {
           ))
         }
       </aside>
+
+      {
+        relatedPosts.length > 0 && (
+          <section class="mt-8 border-t border-gray-200 pt-6 dark:border-gray-700">
+            <h2 class="my-8 text-xl font-medium">{t("post.related")}</h2>
+            <ul class="list-none">
+              {relatedPosts.map((relatedPost: any) => (
+                <li class="my-3 flex items-baseline gap-x-6 md:my-2">
+                  <a
+                    href={`/${lang}/posts/${relatedPost.id}/`}
+                    class="text-base font-normal visited:text-purple-500/90 hover:underline"
+                  >
+                    {relatedPost.data.title}
+                  </a>
+                  <time
+                    class="shrink-0 text-right text-gray-700 dark:text-white/80"
+                    datetime={relatedPost.data.pubDate.toISOString()}
+                  >
+                    {formatDate(relatedPost.data.pubDate, lang)}
+                  </time>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
     </article>
 
     {

@@ -11,7 +11,7 @@ description: "Why I chose to continue front-end development after years of corpo
 
 I worked as a Front-End Developer in a corporate setting for many years, but it wasn’t until I resigned that I truly found the opportunity to re-examine the question: "What is actually suitable for me going forward?" Many questions don't have immediate answers; they require time and experience to settle.
 
-In the first few months after leaving, I felt a distinct discomfort from the sudden loss of life’s momentum. This was accompanied by anxiety—anxiety about the pause in income, and anxiety about having idle time. So, out of habit, I began polishing my resume, grinding algorithms, and memorizing standardized interview trivia. 
+In the first few months after leaving, I felt a distinct discomfort from the sudden loss of life’s momentum. This was accompanied by anxiety—anxiety about the pause in income, and anxiety about having idle time. So, out of habit, I began polishing my resume, grinding algorithms, and memorizing standardized interview trivia.
 
 However, I ultimately chose not to continue down the path of job hunting.
 
