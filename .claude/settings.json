@@ -1,7 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "WebFetch(domain:fediring.net)"
-    ]
+    "allow": ["WebFetch(domain:fediring.net)"]
   }
 }
