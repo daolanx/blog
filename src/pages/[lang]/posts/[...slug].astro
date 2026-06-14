@@ -55,6 +55,7 @@ const structuredData = {
 
 <MainLayout
   {...post.data}
+  ogImage={post.data.ogImage || `/og/${post.id}.png`}
   ogType="article"
   pubDate={new Date(post.data.pubDate).toISOString()}
   updatedDate={post.data.updatedDate
