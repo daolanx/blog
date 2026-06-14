@@ -16,10 +16,9 @@ interface Props {
   post: Post
   lang: string
   dateFormat?: string
-  compact?: boolean
 }
 
-const { post, lang, dateFormat = "default", compact = false } = Astro.props
+const { post, lang, dateFormat = "default" } = Astro.props
 
 // Validate required props
 if (!post?.id || !post?.data?.title || !post?.data?.pubDate) {
@@ -43,14 +42,9 @@ const datetime = post.data.pubDate.toISOString()
 ---
 
 <article
-  class:list={[
-    "flex w-full items-baseline gap-x-4",
-    compact
-      ? "py-0.5"
-      : "align-center my-3 flex-row-reverse justify-end gap-x-6 md:my-2",
-  ]}
+  class="align-center my-3 flex w-full flex-row-reverse items-baseline justify-end gap-x-6 md:my-2"
 >
-  <h3 class:list={[compact ? "text-base" : "text-lg", "hover:underline"]}>
+  <h3 class="text-lg hover:underline">
     <a
       href={postUrl}
       class="visited:text-purple-500/90"
@@ -61,10 +55,7 @@ const datetime = post.data.pubDate.toISOString()
     </a>
   </h3>
   <time
-    class:list={[
-      "shrink-0 text-right text-gray-500 dark:text-gray-400",
-      compact ? "text-xs" : "text-gray-700 dark:text-white/80",
-    ]}
+    class="shrink-0 text-right text-gray-700 dark:text-white/80"
     datetime={datetime}
     aria-label={`Published on ${formattedDate}`}
   >

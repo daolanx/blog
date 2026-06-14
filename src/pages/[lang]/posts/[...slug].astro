@@ -118,13 +118,11 @@ const structuredData = {
       {
         relatedPosts.length > 0 && (
           <section class="mt-8 border-t border-gray-200 pt-6 dark:border-gray-700">
-            <h2 class="mb-3 text-lg font-semibold text-gray-700 dark:text-gray-300">
-              {t("post.related")}
-            </h2>
-            <ul class="space-y-1">
+            <h2 class="my-8 text-xl font-medium">{t("post.related")}</h2>
+            <ul>
               {relatedPosts.map((relatedPost: any) => (
                 <li>
-                  <PostItem post={relatedPost} lang={lang} compact />
+                  <PostItem post={relatedPost} lang={lang} />
                 </li>
               ))}
             </ul>
