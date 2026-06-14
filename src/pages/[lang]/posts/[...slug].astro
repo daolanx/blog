@@ -121,7 +121,7 @@ const structuredData = {
             <h2 class="mb-3 text-lg font-semibold text-gray-700 dark:text-gray-300">
               {t("post.related")}
             </h2>
-            <ul class="divide-y divide-gray-100 dark:divide-gray-800">
+            <ul class="space-y-1">
               {relatedPosts.map((relatedPost: any) => (
                 <li>
                   <PostItem post={relatedPost} lang={lang} compact />
