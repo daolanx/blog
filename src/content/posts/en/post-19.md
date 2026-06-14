@@ -17,16 +17,16 @@ While deploying the entire application on Cloudflare Pages/Workers theoretically
 
 # 2. Key Implementation Details
 
-## 2.1 Next.js 
+## 2.1 Next.js
 
 - **[next.config.ts](https://github.com/daolanx/work/blob/1.0/next.config.ts) Configuration**: Utilized the `assetPrefix` property to intercept static asset requests and redirect them to the target CDN URL. Additionally, `images.loader` is set to `custom` to enable image size optimization via a custom Image Loader.
 - **[image-loader.ts](https://github.com/daolanx/work/blob/1.0/lib/image-loader.ts)**: Implemented custom loader logic to interface with Cloudflare’s image processing capabilities or specific proxy paths.
 
-## 2.2 GitHub 
+## 2.2 GitHub
 
 Added **[.github/workflows/deploy-prod.yml](https://github.com/daolanx/work/blob/1.0/.github/workflows/deploy-prod.yml)**. When code is pushed to the branch, GitHub Actions triggers a production build, syncs the generated static assets (`.next/static`) to Cloudflare R2, and finally calls the Vercel API to complete the application deployment.
 
-## 2.3 Cloudflare 
+## 2.3 Cloudflare
 
 - **[worker.js](https://github.com/daolanx/work/blob/1.0/workers/remote-assets/src/index.js)**: Instead of exposing the R2 custom domain directly, using a Worker as a proxy further optimizes TTFB (Time to First Byte) and improves connection reuse. (Note: I tested a Cache API + R2 Binding approach, but since the speed improvement was negligible, I opted for the cleaner `fetch` implementation).
 - **Tiered Cache**: Enabling this significantly increases the cache hit rate and reduces origin shielding overhead, resulting in a noticeable performance boost.

@@ -19,10 +19,9 @@ Below is a summary of key takeaways and architectural considerations from the in
 
 PayloadCMS is built natively for Next.js. It acts more like a powerful core plugin that seamlessly handles the end-to-end CMS workflow of **authoring** and **consumption**:
 
-* **Efficient Authoring**: Its code-first approach automatically generates a modern admin panel, complete with data management, authentication, media uploads, and live previews.
-* **Optimized Consumption**: It provides a Local API that allows direct database access on the server side (React Server Components), bypassing network API overhead for excellent performance and flexibility.
-* **Full Control**: It is completely open-source and free. All data is securely stored in your own database, meaning zero vendor lock-in.
-
+- **Efficient Authoring**: Its code-first approach automatically generates a modern admin panel, complete with data management, authentication, media uploads, and live previews.
+- **Optimized Consumption**: It provides a Local API that allows direct database access on the server side (React Server Components), bypassing network API overhead for excellent performance and flexibility.
+- **Full Control**: It is completely open-source and free. All data is securely stored in your own database, meaning zero vendor lock-in.
 
 # 2. Installation & Configuration
 
@@ -30,7 +29,7 @@ Follow the [PayloadCMS Installation Docs](https://payloadcms.com/docs/getting-st
 
 ## 2.1 Route Isolation
 
-Since PayloadCMS's `RootLayout` includes its own `<html>` tags, and its authentication and admin interaction logic are completely independent from your business code, its routes **must** be physically separated from your application routes using route groups. 
+Since PayloadCMS's `RootLayout` includes its own `<html>` tags, and its authentication and admin interaction logic are completely independent from your business code, its routes **must** be physically separated from your application routes using route groups.
 
 The recommended directory structure is:
 
@@ -48,14 +47,14 @@ This is my current Payload core config file. It covers **custom multi-size image
 
 ```ts
 // @ts-nocheck -- needed because payload generate:types uses a tsx version that can't parse import type
-import { postgresAdapter } from "@payloadcms/db-postgres";
-import { s3Storage } from "@payloadcms/storage-s3";
-import { revalidatePath } from "next/cache";
-import { buildConfig } from "payload";
+import { postgresAdapter } from "@payloadcms/db-postgres"
+import { s3Storage } from "@payloadcms/storage-s3"
+import { revalidatePath } from "next/cache"
+import { buildConfig } from "payload"
 
 // Pre-emptive env check: prevents silent failures in stateless serverless deployments (e.g. Vercel)
-if (!process.env.PAYLOAD_SECRET) throw new Error("PAYLOAD_SECRET is missing");
-if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is missing");
+if (!process.env.PAYLOAD_SECRET) throw new Error("PAYLOAD_SECRET is missing")
+if (!process.env.DATABASE_URL) throw new Error("DATABASE_URL is missing")
 
 // ==========================================
 // 1. Media
@@ -76,7 +75,7 @@ const Media = {
       required: true, // Required for SEO and a11y
     },
   ],
-};
+}
 
 // ==========================================
 // 2. Sites
@@ -115,7 +114,7 @@ const Sites = {
       localized: true,
     },
   ],
-};
+}
 
 // ==========================================
 // 3. Tiers
@@ -142,7 +141,7 @@ const Tiers = {
       options: ["free", "pro", "max"],
     },
   ],
-};
+}
 
 export default buildConfig({
   secret: String(process.env.PAYLOAD_SECRET),
@@ -165,7 +164,7 @@ export default buildConfig({
     // Schema sync strategy
     // Local dev: enabled (true) — auto-sync table structure when TS config changes, improving DX
     // Production: disabled (false) — enforces strict safety via `payload migrate` flow to prevent accidental column drops and data loss
-    push: process.env.NODE_ENV === 'development',
+    push: process.env.NODE_ENV === "development",
   }),
 
   // ==========================================
@@ -180,9 +179,11 @@ export default buildConfig({
           // Direct-link strategy: bypasses proxy and exposes the R2 custom domain directly
           // filename is already handled by the underlying layer with original or variant suffixes (e.g., xxx-thumbnail.jpg), just concatenate
           generateFileURL: ({ filename, prefix }) => {
-            const baseUrl = process.env.NEXT_PUBLIC_R2_PUBLIC_URL || "https://assets.daolanx.com";
-            const dir = prefix ? `/${prefix}` : "";
-            return `${baseUrl}${dir}/${filename}`;
+            const baseUrl =
+              process.env.NEXT_PUBLIC_R2_PUBLIC_URL ||
+              "https://assets.daolanx.com"
+            const dir = prefix ? `/${prefix}` : ""
+            return `${baseUrl}${dir}/${filename}`
           },
         },
       },
@@ -202,25 +203,32 @@ export default buildConfig({
       disableLocalStorage: true,
     }),
   ],
-});
-
+})
 ```
+
 # 3. Other Notes
+
 ## 3.1 importMap.js Maintenance
+
 `importMap.js` is a component mapping table generated by Payload. Its core purpose is to allow Next.js to correctly compile and bundle custom admin UI components.
 ⚠️ **Note**: Never edit this file manually. If you encounter errors in the admin panel regarding missing modules, simply run the following command in your terminal to regenerate it:
+
 ```sh
 pnpm payload generate:importmap
 
 ```
+
 ## 3.2 Page-Level revalidate Fallback
+
 In pages that consume CMS data, you can optionally add a time-based cache configuration to implement ISR. For example, caching for one hour:
 
 ```ts
-export const revalidate = 3600;
+export const revalidate = 3600
 ```
+
 **Takeaway**: This may seem redundant alongside revalidatePath in the admin hooks, but it is actually critical in production. It acts as a robustness fallback, effectively preventing situations where a webhook trigger fails or data is modified directly in the database, which would otherwise cause the frontend page cache to become permanently stale.
 
 # 4. Related PR
+
 For the complete integration and file restructuring process, please refer to this PR:
 [https://github.com/daolanx/work/pull/4](https://github.com/daolanx/work/pull/4)

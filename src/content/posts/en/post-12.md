@@ -3,7 +3,7 @@ title: "Next.js + Cloudflare #1: Using R2 Boosting Performance While Slashing Co
 pubDate: 2026-02-03
 updatedDate: 2026-02-03
 author: "Dax"
-tags: ["Next.js", "Cloudflare", "Vercel", "GitHub",  "Performance"]
+tags: ["Next.js", "Cloudflare", "Vercel", "GitHub", "Performance"]
 description: "How to boost Next.js performance and slash costs by moving static assets to Cloudflare R2, with step-by-step implementation guide."
 ---
 
