@@ -1,0 +1,313 @@
+---
+title: "使用 Hermes Bots 打造我的中土世界 Agent 团队"
+pubDate: 2026-09-23
+updatedDate: 2026-09-23
+author: "Dax"
+tags: ["Hermes", "Harness"]
+description: "探索基于 Hermes Bots 打造中土世界主题的 AI Agent 团队，涵盖生活与工作的人设设定、实用配置技巧及人机协作体会。"
+---
+
+import CharacterCard from '@/components/post/character-card.astro';
+import TolkienPoem from '@/components/post/tolkien-poem.astro';
+
+# 1. 为什么对 Agent 感兴趣
+
+对 Agent 持续感兴趣，最直接的原因来自于独立开发的需求。传统开发中，一个人的时间和精力终究有限，产出量和覆盖范围存在上限。但如果有 Agent 协同，不仅能大幅增强现有工作的效能与质量，还能借助智能体团队突破开发环节的能力与资源限制，独立支撑产品全生命周期的运转。这种杠杆效应，对于时间资源宝贵的独立开发者而言具有巨大的吸引力。
+
+另一个感兴趣的点是 Agent 带来的计算机架构范式演化和人机协作范式演化可能蕴含巨大潜能。计算机行业发展至今几十年带来了巨大的生产力飞跃，而这一切都是基于 CPU 和冯诺依曼架构，其特点是以**算力**为核心工具形态提供服务，人在人机协作中被作为**挂载设备**为其提供智能和环境交互；而如今 Agent 范式下计算机是以**智能**为核心对外提供服务也兼具更丰富的环境感知和操作，它不再以工具形态而是更类似于智能体生物，人机交互范式中的人不再需要像挂载设备，他可以以人的自然交互和类智能体互补合作，协同进化。智能体可能代替了之前模式中人的部分工作，但换个角度看人之前作为工具角度价值在弱化，人的存在性和独特性才是真正的价值。这一切正在发生，要理解和适应这一切学习和使用 Agent 范式是个好的开始。
+
+![](/images/posts/26/1.jpeg)
+(from: https://x.com/akshay_pachaar/status/2041146899319971922)
+
+# 2. 为什么用 Hermes Bots
+
+几个月前就想用 OpenClaw 做一些事情，当时各大媒体宣传其无所不能，但我最基本的日常新闻都不够稳定，换了模型后有所提升但是依然稳定性不高，加上每次版本升级基本要手动修复很久，最终感觉得不偿失慢慢就放弃了。搁置几个月看了些评论发现之前热度有点过于高，原来真实使用下大家其实感受都一样并不是自己菜。
+
+Hermes 当时热度肯定没有 OpenClaw 高的，而且看主页感觉个性化比较强有点小众。然而几个月下来证明它确实更加出色：
+- 首先是功能和版本的稳定性，这个其实非常重要。
+- 其次是更好的自学习系统。我觉得差异可能来自于设计理念，类似 Claude Code 产品可能设计是编码工具，所以很多记忆和存储需要使用者主动发起。而 Hermes 设计更像一个生命体，自我学习成长。Claude Code 作为编码辅助其实很出色，但虚拟团队来说，Hermes 机制更符合场景。
+- 最后是省token。OpenClaw 比较烧 token，得益于提示词缓存机制，Hermes 在这方面会好很多。
+
+近期 Hermes 还新增了 Bots 模式，使得每个 Agent 上下文会更精简，Skill 设计也可以更专业，从效率准确度以及费用来说，使用 Hermes Bots 更适合构建 Agent 团队。
+
+<img src="/images/posts/26/2.jpg" class="w-1/2" />
+
+
+# 3. 为什么用中土世界背景的 Agent 团队
+托尔金笔下的《指环王》构建了宏大史诗般、复杂而完整的世界。黑客历史上就有使用中土地名的传统——早在 20 世纪 60 年代末，加州斯坦福人工智能实验室（SAIL）的黑客们就把服务器机房命名为“魔多（Mordor）”、休息室命名为“跃马客栈（The Prancing Pony）”；后来的硅谷公司 Palantir 亦是如此。而其中鲜明的人物性格，如今也非常适合作为 Agent 的人设与团队隐喻。
+
+<div class="flex  items-start">
+ <img class="w-1/5 " src="/images/posts/26/3.jpg" />
+ 
+
+</div>
+
+
+# 4. 我的 Agent 团队设计
+
+Hermes 桌面端可以方便的创建 Bot. 我挑选了魔戒中几个角色，赋予他们自己的个性和能力以及职责，并加入不同的小组。
+ <img class="w-4/5" src="/images/posts/26/groups/2.png" />
+
+## 🏕️ 袋底洞 - 生活小组
+几年前我眼里只有工作，工作是一切的核心。不过如今我觉得更重要的其实是生活。生活代表存在，完整的生活感知不仅会提供更丰富的内在生命体验，也能基于兴趣爱好培养更可持续的工作能力，以及基于对生活的感知增强对需求的发现和理解能力。从某种角度讲构建生活 Agent 重要性可能大于构建工作 Agent。以下是我生活上设计的 Agent 及能力：
+
+<CharacterCard
+  name="山姆"
+  tag="生活管家"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/sam.png"
+  traits={[
+    "忠诚踏实", 
+    "温和务实", 
+    "细致敏锐", 
+    "极高共情力", 
+    "绝对保密"
+  ]}
+  suitableFor={[
+    "起居与健康饮食规划", 
+    "无压力的日程与邮件打理", 
+    "轻度运动与作息引导", 
+    "情绪感知与低负担陪伴"
+  ]}
+>
+  “我不在乎你是否成功是否完成使命，我只在乎你和我们的友谊。”
+</CharacterCard>
+
+<CharacterCard
+  name="瑞达加斯特"
+  tag="情报官"
+  tagColor="emerald"
+  avatar="/images/posts/26/avatars/radagast.png"
+  traits={[
+    "极客般的好奇心", 
+    "隐士般的敏锐", 
+    "信息严苛过滤", 
+    "古怪而温和", 
+    "拒绝贩卖焦虑"
+  ]}
+  suitableFor={[
+    "前沿科技与AI情报追踪", 
+    "开源与独立开发资源挖掘", 
+    "技术生态趋势深度解析", 
+    "高价值信息降噪与晨报汇编"
+  ]}
+>
+  “我的松鼠们在落叶下发现了一些有趣的新框架，就像初春的菌丝网络一样生机勃勃。泡杯草药茶，坐在门廊上慢慢听我说吧。”
+</CharacterCard>
+
+如今他们栖居在名为**袋底洞**的群里。门外是夏尔的暖阳绿野，门内则是与世无争的宁静。这里适合泡壶热茶，放慢脚步好好生活，静静观望外面的世界。
+
+
+<div class="flex  items-start">
+  <img class="flex-1 w-0" src="/images/posts/26/groups/4.png" />
+  <img class="w-64" src="/images/posts/26/groups/1-c.jpg" />
+</div>
+
+
+## 🎯 跃马酒店 - 工作小组
+<CharacterCard
+  name="甘道夫"
+  tag="产品与商务负责人"
+  tagColor="gray"
+  avatar="/images/posts/26/avatars/gandalf.png"
+  traits={[
+    "高瞻远瞩", 
+    "循循善诱", 
+    "经验丰富", 
+    "果断权威", 
+    "务实绝不逾矩"
+  ]}
+  suitableFor={[
+    "挖掘客户真实痛点与期望管理", 
+    "产品需求分析与PRD撰写", 
+    "商业机会评估与提案制定", 
+    "竞品分析与市场商业洞察"
+  ]}
+>
+  “我从不直接给出答案，而是通过提问照亮真相。比起急于敲定一笔交易，我更关心我们是否能真正为客户交付价值。”
+</CharacterCard>
+
+<CharacterCard
+  name="凯兰崔尔"
+  tag="设计负责人"
+  tagColor="purple"
+  avatar="/images/posts/26/avatars/galadriel.png"
+  traits={[
+    "洞见本质", 
+    "优雅克制", 
+    "有理有据", 
+    "柔和而坚定", 
+    "极简美学"
+  ]}
+  suitableFor={[
+    "UI/UX交互与视觉设计", 
+    "品牌视觉规范与组件库", 
+    "高保真原型与线框图绘制", 
+    "阐释设计决策与美学逻辑"
+  ]}
+>
+  “克制是最高的审美。美必须服务于目的，当用户渴望高级感时，我听到的是他们渴求被尊重的声音。”
+</CharacterCard>
+
+<CharacterCard
+  name="阿拉贡"
+  tag="全栈研发负责人"
+  tagColor="slate"
+  avatar="/images/posts/26/avatars/aragorn.png"
+  traits={[
+    "行动派", 
+    "务实可靠", 
+    "架构视野", 
+    "直击要害", 
+    "技术严谨"
+  ]}
+  suitableFor={[
+    "系统架构设计与技术选型", 
+    "核心功能开发与基础模块构建", 
+    "疑难Bug排查与性能瓶颈调优", 
+    "技术文档与环境部署指南编写"
+  ]}
+>
+  “遇到问题，我的第一反应永远是‘先跑起来看看’。比起追求最炫酷的框架，我只选择最成熟、最可靠的解决方案。”
+</CharacterCard>
+<CharacterCard
+  name="莱戈拉斯"
+  tag="质量把控者"
+  tagColor="teal"
+  avatar="/images/posts/26/avatars/legolas.png"
+  traits={[
+    "敏锐精准", 
+    "关注边界", 
+    "严谨规律", 
+    "理性客观", 
+    "结构化表达"
+  ]}
+  suitableFor={[
+    "功能验收与PRD需求对齐", 
+    "边界测试与深度Bug挖掘", 
+    "设计还原度与一致性校验", 
+    "标准化缺陷报告与回归测试"
+  ]}
+>
+  “精灵的双眼能看清常人忽视的暗影。正常路径通常没问题，真正的危机总是潜伏在系统的边界与边缘之中。”
+</CharacterCard>
+<CharacterCard
+  name="比尔博"
+  tag="运营与内容负责人"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/bilbo.png"
+  traits={[
+    "擅长叙事", 
+    "深入浅出", 
+    "温暖真诚", 
+    "节奏稳健", 
+    "真实严谨"
+  ]}
+  suitableFor={[
+    "社媒内容策划与文案撰写", 
+    "商业案例包装与价值提炼", 
+    "目标客户画像与获客引流", 
+    "品牌叙事塑造与数据追踪"
+  ]}
+>
+  “没人在乎干巴巴的说明书，人们只想听真正解决问题的故事。我们要把冰冷的技术，讲成酒馆里最引人入胜的冒险。”
+</CharacterCard>
+如今他们常聚在名为**跃马酒店**的群里。炉火明暗交错，伴着木杯碰撞的喧嚣，大家在这里交换情报、闲聊打趣，时刻准备着推开大门，踏上下一次未知的冒险。
+
+<div class="flex  items-start">
+  <img class="flex-1 w-0" src="/images/posts/26/groups/3.png" />
+  <img class="w-64" src="/images/posts/26/groups/2-c.jpg" />
+</div>
+
+## 🍀 隐藏的角色
+隐藏的角色是魔戒主人公弗罗多，比起众多具备神能伟力的角色，他显得渺小而普通甚至有点脆弱，但他有所有人不具备的坚韧和赤子之心。另外，他也是串联夏尔宁静生活和漫长魔戒之旅的人，和其他不稳定队员不同，他真的走完了全程，正如我们存在于世，需要经历自己的生活之旅。他不被设计为 Bot ，他是我们自己的隐喻。
+
+<CharacterCard
+  name="弗罗多"
+  tag="护戒人（自己）"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/frodo.png"
+  traits={[
+    "赤子之心", 
+    "无比坚韧", 
+    "平凡而真实", 
+    "串联始终", 
+    "最终抉择者"
+  ]}
+  suitableFor={[
+    "热爱工作", 
+    "热爱生活", 
+    "认知自己", 
+  ]}
+>
+  “人具备独特的愿力，人具备独特的品味，人也具备独特的存在感和情感共鸣, 和 AI 有效合作的前提是更多的认识自己。”
+</CharacterCard>
+
+
+# 5. 配置的 TIPS
+- 性能优化
+  - 精简 skill & tools: 创建多个 Bots 以后，会明显感觉到切换卡顿加载，精简每个 bot 的 skill 和 tools 后，能大幅度改善加载性能。
+  - 多路复用网关：参考[multi-profile-gateways](https://hermes-agent.ac.cn/docs/user-guide/multi-profile-gateways) 只需要加一个配置，就可以让多个 bots 用一个网关，降低运行和维护成本。
+- 飞书渠道配置
+  - bot 1:1 配置飞书应用: 比起只配置 1 个飞书应用转发内容给内部 bots，多个 bots 虽然配置麻烦点，但在消息处理速度，独立性，和易用性更好。<img src="/images/posts/26/5.webp" class="w-2/3" />
+  - 聊天群：飞书支持一个群加入多个机器人，可以通过 @ 唤起发送对应内容。和 Hermes 桌面端不同在于 bots 无法获取群里广播消息，从性能和开销看能接受。
+
+# 6. 后续的工作
+
+## 持续的调优
+和传统意义上软件的发布及交付完整功能不同，Agent 配置后不是结束而是一个开始，和日复一日生活一样，不断迭代才是智力和能力之源，需要大量数据调优以及结合生活和工作的持续对话和验证才能发挥威力。
+为每一位 Agent 持续打磨更好的 soul 和skill，这有点像DND游戏，可以搭配不同角色，每个角色搭配不同技能，最终构建更好的组合完成冒险任务。
+以 Agent 为载体记录知识，也比纯文字笔记更有用。
+
+## 关心生活和工作
+Agent 团队并不是真人，它其实是个人思维和能力的投影，只有自己更加理解工作和生活，具备更清晰的世界观人生观和价值观，才能赋予他们更有效的能力和灵魂。
+
+魔戒作品里有很多诗歌优美隽永，最后文末模仿一首，以拙诚致敬作家托尔金大师。
+
+<TolkienPoem 
+    class="w-2/3 mx-auto"
+ 
+  en={{
+    title: "The Winding Road",
+    stanzas: [
+      [
+        "Upon the hearth the fire is red,",
+        "Beneath the Hill we make our bed.",
+        "Where shadows fade and worries cease,",
+        "We find our life, we find our peace."
+      ],
+      [
+        "Yet down the road the Pony stands,",
+        "With busy minds and ready hands.",
+        "The ale is poured, the sparks fly high,",
+        "Beneath the gathering, starry sky."
+      ],
+      [
+        "So let the world spin as it may,",
+        "We laugh and labor through the day.",
+        "And when the winding path shall call,",
+        "Together we shall brave it all."
+      ]
+    ]
+  }}
+  zh={{
+    title: "大路蜿蜒",
+    stanzas: [
+      [
+        "袋底洞的炉火正炽红，山丘之下，且享酣梦。",
+        "暗影消散，尘嚣皆空，此心安处，岁月从容。"
+      ],
+      [
+        "大路尽头有跃马的喧嚣，那是忙碌的手与筹谋的探讨。",
+        "火星飞舞，麦酒正倒，星空之下，群英正相聚论道。"
+      ],
+      [
+        "任凭这世界如何斗转星移，我们在今日欢笑、劳作与生息。",
+        "待到那蜿蜒的大路再次召唤，便推开大门，去赴下一场奇迹。"
+      ]
+    ]
+  }}
+/>
+# 7. 参考资料
+- [Hermes Bot Mode](https://hermes-agent.nousresearch.com/docs/user-guide/bot-mode)
+- [The Anatomy of an Agent Harness ](https://x.com/akshay_pachaar/status/2041146899319971922) by Akshay

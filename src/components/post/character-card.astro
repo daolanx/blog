@@ -1,0 +1,153 @@
+---
+/**
+ * CharacterCard Component
+ *
+ * A Lord of the Rings / Fantasy-inspired character card designed for Astro blogs.
+ * Supports light (parchment) and dark (Mithril/Shadow) theme modes with structured
+ * character trait metadata and an optional description slot.
+ *
+ * @component
+ * @example
+ * ```astro
+ * <CharacterCard "Hazardous "Logistics", "Loyal", "Skilled * Brave"," Cook"]} Emotional" Journeys"]} Support", avatar="/images/sam.jpg" name="Samwise Gamgee" suitableFor="{[" tag="Loyal Companion" tagColor="amber" traits="{[">
+ *   "There's some good in this world, Mr. Frodo, and it's worth fighting for."
+ * </CharacterCard>
+ * ```
+ */
+
+import { getLangFromUrl } from "~/i18n/utils"
+
+interface Props {
+  name: string
+  tag?: string
+  tagColor?: "emerald" | "amber" | "blue" | "gray" | "slate" | "red" | "purple"
+  avatar: string
+  traits?: string | string[]
+  suitableFor?: string | string[]
+}
+
+const {
+  name,
+  tag,
+  tagColor = "emerald",
+  avatar,
+  traits,
+  suitableFor,
+} = Astro.props
+
+const translations = {
+  en: {
+    avatarAltSuffix: "'s avatar",
+    traitsLabel: "Traits:",
+    suitableForLabel: "Roles:",
+  },
+  zh: {
+    avatarAltSuffix: " 的头像",
+    traitsLabel: "角色特征：",
+    suitableForLabel: "适合工作：",
+  },
+}
+
+const lang = getLangFromUrl(Astro.url)
+const t = translations[lang] ?? translations.en
+
+const formatText = (val?: string | string[]) => {
+  if (!val) return ""
+  return Array.isArray(val) ? val.join(" · ") : val
+}
+
+const traitsText = formatText(traits)
+const suitableForText = formatText(suitableFor)
+
+const colorMap: Record<string, string> = {
+  emerald:
+    "bg-emerald-100 dark:bg-green-950 text-emerald-900 dark:text-green-200 border-emerald-300 dark:border-emerald-800/60",
+  amber:
+    "bg-amber-100 dark:bg-amber-950 text-amber-900 dark:text-amber-200 border-amber-300 dark:border-amber-700/60",
+  blue: "bg-sky-100 dark:bg-slate-950 text-sky-900 dark:text-blue-200 border-sky-300 dark:border-blue-800/60",
+  gray: "bg-stone-200 dark:bg-stone-900 text-stone-800 dark:text-stone-300 border-stone-300 dark:border-stone-700/60",
+  slate:
+    "bg-slate-200 dark:bg-slate-900 text-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700/60",
+  red: "bg-red-100 dark:bg-red-950 text-red-900 dark:text-red-200 border-red-300 dark:border-red-800/60",
+  purple:
+    "bg-fuchsia-100 dark:bg-fuchsia-950 text-fuchsia-900 dark:text-fuchsia-200 border-fuchsia-300 dark:border-fuchsia-800/60",
+  teal: "bg-teal-100 dark:bg-teal-950 text-teal-900 dark:text-teal-200 border-teal-300 dark:border-teal-800/60",
+}
+
+const themeClass = colorMap[tagColor] || colorMap.emerald
+---
+
+<article
+  class="not-prose my-6 flex items-start gap-4 rounded-md border border-amber-900/20 bg-[#fbf9f5] p-5 font-serif shadow-md shadow-amber-900/5 transition-colors duration-300 dark:border-amber-900/50 dark:bg-stone-950 dark:ring-1 dark:shadow-[0_8px_30px_rgba(0,0,0,0.6)] dark:ring-amber-500/10 dark:ring-inset"
+>
+  <div class="shrink-0">
+    <img
+      src={avatar}
+      alt={`${name}${t.avatarAltSuffix}`}
+      class="h-20 w-20 rounded-full border-2 border-amber-700/40 object-cover p-0.5 shadow-inner dark:border-amber-800/70"
+    />
+  </div>
+
+  <div class="min-w-0 flex-1">
+    <header
+      class="mb-3 flex flex-wrap items-center gap-3 border-b border-amber-900/10 pb-2 dark:border-amber-500/15"
+    >
+      <h3
+        class="m-0 text-xl font-bold tracking-wide text-amber-950 drop-shadow-sm dark:text-amber-500"
+      >
+        {name}
+      </h3>
+      {
+        tag ? (
+          <span
+            class={`rounded-sm border px-2 py-0.5 text-xs font-medium tracking-wider ${themeClass}`}
+          >
+            {tag}
+          </span>
+        ) : null
+      }
+    </header>
+
+    {
+      (traitsText || suitableForText) && (
+        <dl class="m-0 flex flex-col gap-2.5 text-sm">
+          {traitsText && (
+            <div class="flex items-start gap-2">
+              <dt class="flex w-24 shrink-0 items-center font-bold whitespace-nowrap text-amber-900 dark:text-amber-400">
+                <span class="mr-1.5 text-xs text-amber-700/80 dark:text-amber-500/80">
+                  ❖
+                </span>
+                {t.traitsLabel}
+              </dt>
+              <dd class="m-0 flex-1 leading-relaxed text-stone-800 dark:text-stone-300/90">
+                {traitsText}
+              </dd>
+            </div>
+          )}
+
+          {suitableForText && (
+            <div class="flex items-start gap-2">
+              <dt class="flex w-24 shrink-0 items-center font-bold whitespace-nowrap text-amber-900 dark:text-amber-400">
+                <span class="mr-1.5 text-xs text-amber-700/80 dark:text-amber-500/80">
+                  ✦
+                </span>
+                {t.suitableForLabel}
+              </dt>
+              <dd class="m-0 flex-1 leading-relaxed text-stone-800 dark:text-stone-300/90">
+                {suitableForText}
+              </dd>
+            </div>
+          )}
+        </dl>
+      )
+    }
+
+    {
+      Astro.slots.has("default") && (
+        <div class="mt-3 border-t border-dashed border-amber-900/15 pt-2.5 text-sm leading-relaxed tracking-wide text-stone-700 dark:border-amber-500/15 dark:text-stone-300/80">
+          <slot />
+        </div>
+      )
+    }
+  </div>
+</article>

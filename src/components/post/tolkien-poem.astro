@@ -1,0 +1,175 @@
+---
+/**
+ * @file TolkienPoem.astro
+ * @description A parchment-styled poem component that automatically adapts to the language environment, supporting custom CSS classes.
+ * 
+
+ * @param {string} [author] - The author's name.
+ * @param {string} [class] - Custom CSS classes to apply to the wrapper.
+ * @param {object} en - The English version of the poem data (title and stanzas).
+ * @param {object} [zh] - The Chinese version of the poem data (title and stanzas).
+ */
+
+import { getLangFromUrl } from "~/i18n/utils"
+
+interface PoemData {
+  title?: string
+  stanzas: string[][]
+}
+
+interface Props {
+  author?: string
+  class?: string
+  en: PoemData
+  zh?: PoemData
+}
+
+const { author, class: className = "", en, zh } = Astro.props
+const lang = getLangFromUrl(Astro.url)
+const isZhEnv = lang === "zh" && zh !== undefined
+const displayTitle = isZhEnv ? zh.title : en.title
+const displaySubtitle = isZhEnv ? en.title : undefined
+---
+
+<tolkien-poem
+  class={`block relative my-10 overflow-hidden rounded-xl border border-amber-900/20 bg-amber-50/60 p-6 sm:p-8 shadow-sm backdrop-blur-sm dark:border-amber-500/20 dark:bg-amber-950/20 ${className}`}
+>
+  <!-- Corner Ornaments -->
+  <div
+    class="pointer-events-none absolute top-2 left-3 font-serif text-xs text-amber-800/40 select-none dark:text-amber-400/30"
+  >
+    ✦
+  </div>
+  <div
+    class="pointer-events-none absolute bottom-2 left-3 font-serif text-xs text-amber-800/40 select-none dark:text-amber-400/30"
+  >
+    ✦
+  </div>
+  <div
+    class="pointer-events-none absolute right-3 bottom-2 font-serif text-xs text-amber-800/40 select-none dark:text-amber-400/30"
+  >
+    ✦
+  </div>
+
+  <!-- Toggle Button (Only rendered in 'zh' environment) -->
+  {
+    isZhEnv && (
+      <button
+        class="toggle-btn absolute top-3 right-3 cursor-pointer rounded border border-amber-900/20 px-2 py-1 font-serif text-[10px] text-amber-800/60 transition-all duration-300 select-none hover:bg-amber-900/5 hover:text-amber-900 sm:text-xs dark:border-amber-500/30 dark:text-amber-300/60 dark:hover:bg-amber-400/10 dark:hover:text-amber-200"
+        aria-label="Toggle translation"
+      >
+        En / Zh
+      </button>
+    )
+  }
+
+  <!-- Top Divider -->
+  <div class="mb-6 flex items-center justify-center space-x-3 opacity-60">
+    <span
+      class="h-px w-16 bg-gradient-to-r from-transparent via-amber-700 to-transparent dark:via-amber-400"
+    ></span>
+    <span
+      class="font-serif text-xs tracking-widest text-amber-800 dark:text-amber-300"
+      >❦</span
+    >
+    <span
+      class="h-px w-16 bg-gradient-to-l from-transparent via-amber-700 to-transparent dark:via-amber-400"
+    ></span>
+  </div>
+
+  <!-- Dynamic Header -->
+  {
+    displayTitle && (
+      <div class="mb-6 text-center">
+        <h3 class="font-serif text-xl font-semibold tracking-wide text-amber-950 sm:text-2xl dark:text-amber-100">
+          {displayTitle}
+        </h3>
+        {displaySubtitle && (
+          <p class="mt-1 font-serif text-xs text-amber-800/70 italic dark:text-amber-300/70">
+            {displaySubtitle}
+          </p>
+        )}
+      </div>
+    )
+  }
+
+  <!-- Poem Content -->
+  <div class="space-y-8 text-center font-serif leading-relaxed">
+    {
+      en.stanzas.map((stanza, index) => (
+        <div class="stanza">
+          <div class="text-[0.95rem] leading-[1.6] text-amber-950/90 italic dark:text-amber-100/90">
+            {stanza.map((line) => (
+              <p class="m-0">{line}</p>
+            ))}
+          </div>
+          {isZhEnv && zh.stanzas[index] && (
+            <div class="translation-block mt-2 text-[0.875rem] tracking-wide text-amber-900/75 transition-opacity duration-300 dark:text-amber-300/75">
+              {zh.stanzas[index].map((tLine) => (
+                <p class="m-0">{tLine}</p>
+              ))}
+            </div>
+          )}
+        </div>
+      ))
+    }
+  </div>
+
+  <!-- Author -->
+  {
+    author && (
+      <div class="mt-8 pr-4 text-right font-serif text-xs text-amber-900/70 italic dark:text-amber-300/70">
+        — {author}
+      </div>
+    )
+  }
+
+  <!-- Bottom Divider -->
+  <div class="mt-6 flex items-center justify-center space-x-3 opacity-60">
+    <span
+      class="h-px w-12 bg-gradient-to-r from-transparent via-amber-700 to-transparent dark:via-amber-400"
+    ></span>
+    <span class="text-[10px] text-amber-800 dark:text-amber-300">❖</span>
+    <span
+      class="h-px w-12 bg-gradient-to-l from-transparent via-amber-700 to-transparent dark:via-amber-400"
+    ></span>
+  </div>
+</tolkien-poem>
+
+<script>
+  class TolkienPoem extends HTMLElement {
+    connectedCallback() {
+      const btn = this.querySelector(".toggle-btn")
+      const transBlocks = this.querySelectorAll(".translation-block")
+
+      if (!btn || transBlocks.length === 0) return
+
+      let showTranslation = true
+
+      const updateView = () => {
+        transBlocks.forEach((block) => {
+          if (showTranslation) {
+            block.classList.remove("hidden")
+          } else {
+            block.classList.add("hidden")
+          }
+        })
+
+        if (showTranslation) {
+          btn.classList.remove("opacity-50")
+        } else {
+          btn.classList.add("opacity-50")
+        }
+      }
+
+      btn.addEventListener("click", () => {
+        showTranslation = !showTranslation
+        updateView()
+      })
+    }
+  }
+
+  if (!customElements.get("tolkien-poem")) {
+    customElements.define("tolkien-poem", TolkienPoem)
+  }
+</script>

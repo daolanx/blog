@@ -1,0 +1,337 @@
+---
+title: "Crafting My Middle-earth Agent Team with Hermes Bots"
+pubDate: 2026-09-23
+updatedDate: 2026-09-23
+author: "Dax"
+tags: ["Hermes", "Harness"]
+description: "An exploration of building a Middle-earth-themed AI agent team using Hermes Bots, covering persona design for life and work, practical setup tips, and human-AI collaboration."
+---
+
+import CharacterCard from '@/components/post/character-card.astro';
+import TolkienPoem from '@/components/post/tolkien-poem.astro';
+
+# 1. Why I'm Interested in Agents
+
+The most direct reason for my sustained interest in Agents stems from the needs of indie development. In traditional development, one person's time and energy are ultimately limited, and there is an upper bound on output and coverage. But with Agent collaboration, not only can the effectiveness and quality of existing work be significantly enhanced, but a team of intelligent agents can also break through the capability and resource constraints of the development pipeline, independently supporting the entire product lifecycle. This leverage effect holds enormous appeal for indie developers whose time resources are precious.
+
+Another point of interest lies in the massive potential embedded in the evolution of computing architecture paradigms and human-machine collaboration paradigms brought about by Agents. The computer industry has achieved enormous productivity leaps over the past few decades, all based on CPUs and the von Neumann architecture, characterized by **computational power** as the core tool form providing services, with humans acting as **peripheral devices** in human-machine collaboration, supplying intelligence and environmental interaction. Now, under the Agent paradigm, computers provide services centered on **intelligence** while also offering richer environmental perception and operation. Rather than existing as tools, they more closely resemble intelligent living beings. In the human-machine interaction paradigm, humans no longer need to function as peripheral devices — they can interact naturally and collaborate complementarily with agent-like entities, co-evolving together. Intelligent agents may have replaced part of the human workload in previous models, but viewed from another angle, the value of humans as tools is diminishing — it is human existence and uniqueness that represent true value. All of this is already happening, and to understand and adapt to it, learning and using the Agent paradigm is a good start.
+
+![](/images/posts/26/1.jpeg)
+(from: https://x.com/akshay_pachaar/status/2041146899319971922)
+
+# 2. Why Use Hermes Bots
+
+Several months ago, I wanted to use OpenClaw for some things. At the time, all the major media outlets were promoting it as omnipotent, but even my most basic daily news wasn't stable enough. After switching models there was some improvement, but stability remained low. Plus, every version upgrade essentially required lengthy manual fixes. Eventually, I felt the costs outweighed the benefits and gradually gave up. After shelving it for a few months and reading some reviews, I found that the earlier hype had been overblown — in real-world use, everyone actually had the same experience, and it wasn't just me being incompetent.
+
+Hermes certainly didn't have the same level of hype as OpenClaw at the time, and from its homepage it felt quite personalized and a bit niche. However, several months have proven that it is indeed superior:
+
+- First is the stability of features and versions, which is actually very important.
+- Second is a better self-learning system. I think the difference may come from design philosophy — products like Claude Code seem to be designed as coding tools, so much of the memory and storage require user-initiated actions. Hermes, by contrast, is designed more like a living organism that learns and grows on its own. Claude Code is excellent as a coding assistant, but for a virtual team, Hermes' mechanism better fits the scenario.
+- Finally, it saves tokens. OpenClaw is quite token-hungry; thanks to its prompt caching mechanism, Hermes is much better in this regard.
+
+Recently, Hermes also added the Bots mode, making each Agent's context more streamlined, and Skill design can be more specialized. In terms of efficiency, accuracy, and cost, using Hermes Bots is better suited for building Agent teams.
+
+<img src="/images/posts/26/2.jpg" class="w-1/2" />
+
+
+# 3. Why Use a Middle-earth-themed Agent Team
+
+Tolkien's *The Lord of the Rings* constructed a grand, epic, complex, and complete world. There is a tradition in hacker history of using Middle-earth place names — as early as the late 1960s, hackers at Stanford Artificial Intelligence Laboratory (SAIL) in California named their server room "Mordor" and the break room "The Prancing Pony"; later, the Silicon Valley company Palantir did the same. The distinctive character personalities are now also very well-suited as personas and team metaphors for Agents.
+
+<div class="flex items-start">
+ <img class="w-1/5 " src="/images/posts/26/3.jpg" />
+</div>
+
+
+# 4. My Agent Team Design
+
+The Hermes desktop app makes it easy to create Bots. I selected several characters from *The Lord of the Rings*, gave them their own personalities, abilities, and responsibilities, and organized them into different groups.
+
+ <img class="w-4/5" src="/images/posts/26/groups/2.png" />
+
+## 🏕️ Bag End - Life Group
+
+A few years ago, I only had eyes for work — work was the core of everything. But now I think what's actually more important is life. Life represents existence; a complete perception of life not only provides richer inner life experiences but can also cultivate more sustainable work capabilities based on interests and hobbies, and enhance the ability to discover and understand needs through a perception of life. From a certain perspective, building a Life Agent may be more important than building a Work Agent. Here are the Agents and capabilities I've designed for my life:
+
+<CharacterCard
+  name="Sam"
+  tag="Life Steward"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/sam.png"
+  traits={[
+    "Loyal and grounded",
+    "Gentle and pragmatic",
+    "Attentive and perceptive",
+    "Extremely empathetic",
+    "Absolutely discreet"
+  ]}
+  suitableFor={[
+    "Daily living and healthy meal planning",
+    "Stress-free schedule and email management",
+    "Light exercise and sleep routine guidance",
+    "Emotional awareness and low-pressure companionship"
+  ]}
+>
+  "I don't care whether you succeed or fulfill your quest. I only care about you and our friendship."
+</CharacterCard>
+
+<CharacterCard
+  name="Radagast"
+  tag="Intelligence Officer"
+  tagColor="emerald"
+  avatar="/images/posts/26/avatars/radagast.png"
+  traits={[
+    "Geek-like curiosity",
+    "Hermit-like sharpness",
+    "Rigorous information filtering",
+    "Quirky yet gentle",
+    "Refuses to peddle anxiety"
+  ]}
+  suitableFor={[
+    "Cutting-edge tech and AI intelligence tracking",
+    "Open-source and indie dev resource mining",
+    "Deep analysis of technology ecosystem trends",
+    "High-value information noise reduction and morning briefing compilation"
+  ]}
+>
+  "My squirrels have found some interesting new frameworks hidden beneath the fallen leaves, alive and vibrant like mycelium networks in early spring. Brew a cup of herbal tea, sit on the porch, and listen to me slowly."
+</CharacterCard>
+
+Now they reside in a group called **Bag End**. Outside the door are the warm sunshine and green fields of the Shire; inside is a tranquil haven, free from worldly strife. This is the perfect place to brew a pot of hot tea, slow down and enjoy life, and quietly observe the world outside.
+
+<div class="flex items-start">
+  <img class="flex-1 w-0" src="/images/posts/26/groups/4.png" />
+  <img class="w-64" src="/images/posts/26/groups/1-c.jpg" />
+</div>
+
+
+## 🎯 The Prancing Pony - Work Group
+
+<CharacterCard
+  name="Gandalf"
+  tag="Head of Product & Business"
+  tagColor="gray"
+  avatar="/images/posts/26/avatars/gandalf.png"
+  traits={[
+    "Far-sighted and visionary",
+    "Guides through gentle persuasion",
+    "Richly experienced",
+    "Decisive and authoritative",
+    "Pragmatic and never oversteps"
+  ]}
+  suitableFor={[
+    "Uncovering customers' real pain points and managing expectations",
+    "Product requirement analysis and PRD writing",
+    "Business opportunity assessment and proposal crafting",
+    "Competitive analysis and market/business insights"
+  ]}
+>
+  "I never give answers directly; instead, I illuminate the truth through questions. Rather than rushing to close a deal, I care more about whether we can truly deliver value to our customers."
+</CharacterCard>
+
+<CharacterCard
+  name="Galadriel"
+  tag="Head of Design"
+  tagColor="purple"
+  avatar="/images/posts/26/avatars/galadriel.png"
+  traits={[
+    "Sees the essence",
+    "Elegant and restrained",
+    "Well-reasoned and evidence-based",
+    "Gentle yet firm",
+    "Minimalist aesthetics"
+  ]}
+  suitableFor={[
+    "UI/UX interaction and visual design",
+    "Brand visual guidelines and component libraries",
+    "High-fidelity prototypes and wireframe creation",
+    "Articulating design decisions and aesthetic logic"
+  ]}
+>
+  "Restraint is the highest aesthetic. Beauty must serve a purpose. When users crave a premium feel, what I hear is their voice yearning to be respected."
+</CharacterCard>
+
+<CharacterCard
+  name="Aragorn"
+  tag="Head of Full-Stack Engineering"
+  tagColor="slate"
+  avatar="/images/posts/26/avatars/aragorn.png"
+  traits={[
+    "Action-oriented",
+    "Pragmatic and reliable",
+    "Architectural vision",
+    "Straight to the point",
+    "Technically rigorous"
+  ]}
+  suitableFor={[
+    "System architecture design and technology selection",
+    "Core feature development and foundational module building",
+    "Difficult bug troubleshooting and performance bottleneck tuning",
+    "Technical documentation and environment deployment guide writing"
+  ]}
+>
+  "When encountering a problem, my first instinct is always to 'get it running first and see.' Rather than chasing the flashiest framework, I only choose the most mature and reliable solutions."
+</CharacterCard>
+
+<CharacterCard
+  name="Legolas"
+  tag="Quality Guardian"
+  tagColor="teal"
+  avatar="/images/posts/26/avatars/legolas.png"
+  traits={[
+    "Sharp and precise",
+    "Attentive to edge cases",
+    "Disciplined and methodical",
+    "Rational and objective",
+    "Structured communication"
+  ]}
+  suitableFor={[
+    "Feature acceptance and PRD requirement alignment",
+    "Boundary testing and deep bug hunting",
+    "Design fidelity and consistency verification",
+    "Standardized defect reporting and regression testing"
+  ]}
+>
+  "Elven eyes can see the shadows that ordinary eyes overlook. Normal paths are usually fine — true dangers always lurk in the boundaries and edges of a system."
+</CharacterCard>
+
+<CharacterCard
+  name="Bilbo"
+  tag="Head of Operations & Content"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/bilbo.png"
+  traits={[
+    "Masterful storyteller",
+    "Makes complex things simple",
+    "Warm and sincere",
+    "Steady pacing",
+    "Authentic and meticulous"
+  ]}
+  suitableFor={[
+    "Social media content planning and copywriting",
+    "Business case packaging and value extraction",
+    "Target customer profiling and lead generation",
+    "Brand narrative crafting and data tracking"
+  ]}
+>
+  "Nobody cares about dry manuals — people only want to hear the stories of real problems being solved. We need to turn cold technology into the most captivating adventure told in the tavern."
+</CharacterCard>
+
+Now they often gather in a group called **The Prancing Pony**. The firelight flickers between bright and dim, accompanied by the clatter of wooden mugs. Here they exchange intelligence, chat and joke around, always ready to push open the doors and embark on the next unknown adventure.
+
+<div class="flex items-start">
+  <img class="flex-1 w-0" src="/images/posts/26/groups/3.png" />
+  <img class="w-64" src="/images/posts/26/groups/2-c.jpg" />
+</div>
+
+## 🍀 The Hidden Character
+
+The hidden character is Frodo, the protagonist of *The Lord of the Rings*. Compared to the many characters with divine powers and great might, he appears small and ordinary, even somewhat fragile. But he possesses a resilience and pure heart that no one else has. Moreover, he is the one who connects the peaceful life of the Shire to the long journey of the Ring. Unlike the other unreliable team members, he truly completed the entire journey — just as we exist in the world and must traverse our own life journey. He is not designed as a Bot; he is a metaphor for ourselves.
+
+<CharacterCard
+  name="Frodo"
+  tag="Ring-bearer (Yourself)"
+  tagColor="amber"
+  avatar="/images/posts/26/avatars/frodo.png"
+  traits={[
+    "Pure-hearted",
+    "Incomparably resilient",
+    "Ordinary yet authentic",
+    "Connects the beginning to the end",
+    "The ultimate decision-maker"
+  ]}
+  suitableFor={[
+    "Loving your work",
+    "Loving your life",
+    "Knowing yourself",
+  ]}
+>
+  "Humans possess a unique capacity for will, a unique sense of taste, and a unique sense of existence and emotional resonance. The prerequisite for effective collaboration with AI is knowing yourself more deeply."
+</CharacterCard>
+
+
+# 5. Configuration TIPS
+
+- **Performance Optimization**
+  - **Streamline skills & tools**: After creating multiple Bots, you will noticeably experience lag and loading delays when switching. Streamlining each bot's skills and tools can dramatically improve loading performance.
+  - **Multiplexed gateway**: Refer to
+    [multi-profile-gateways](https://hermes-agent.ac.cn/docs/user-guide/multi-profile-gateways)
+    — just add one configuration, and multiple bots can share a single gateway,
+    reducing operating and maintenance costs.
+
+- **Feishu (Lark) Channel Configuration**
+  - **Bot 1:1 Feishu app configuration**:
+    Compared to configuring just 1 Feishu app to forward content to internal bots,
+    setting up multiple bots is more hassle to configure but offers better message
+    processing speed, independence, and ease of use.
+    <img src="/images/posts/26/5.webp" class="w-2/3" />
+  - **Chat groups**:
+    Feishu supports adding multiple bots to a single group; you can invoke them
+    via @ mentions to send corresponding content. The difference from the Hermes
+    desktop app is that bots cannot receive broadcast messages in the group,
+    but this is acceptable from a performance and overhead perspective.
+
+# 6. Follow-up Work
+
+## Continuous Tuning
+
+Unlike the traditional notion of software releases delivering complete functionality, Agent configuration is not an end but a beginning. Just like day-to-day living, continuous iteration is the source of intelligence and capability. It requires extensive data tuning and ongoing conversations and validation integrated with life and work to unleash its full power.
+
+Continuously refining better souls and skills for each Agent is a bit like a D&D game — you can mix and match different characters, each with different skills, ultimately building a better combination to complete adventure quests.
+
+Using Agents as a medium to record knowledge is also more useful than pure text notes.
+
+## Caring About Life and Work
+
+An Agent team is not made of real people — it is actually a projection of one's own thinking and capabilities. Only by better understanding one's own work and life, and possessing a clearer worldview, outlook on life, and values, can one endow them with more effective capabilities and souls.
+
+The Lord of the Rings contains many poems that are beautiful and timeless. To close this post, I'll humbly attempt to imitate one, paying sincere tribute to the great author Tolkien.
+
+<TolkienPoem
+    class="w-2/3 mx-auto"
+  en={{
+    title: "The Winding Road",
+    stanzas: [
+      [
+        "Upon the hearth the fire is red,",
+        "Beneath the Hill we make our bed.",
+        "Where shadows fade and worries cease,",
+        "We find our life, we find our peace."
+      ],
+      [
+        "Yet down the road the Pony stands,",
+        "With busy minds and ready hands.",
+        "The ale is poured, the sparks fly high,",
+        "Beneath the gathering, starry sky."
+      ],
+      [
+        "So let the world spin as it may,",
+        "We laugh and labor through the day.",
+        "And when the winding path shall call,",
+        "Together we shall brave it all."
+      ]
+    ]
+  }}
+  zh={{
+    title: "大路蜿蜒",
+    stanzas: [
+      [
+        "袋底洞的炉火正炽红，山丘之下，且享酣梦。",
+        "暗影消散，尘嚣皆空，此心安处，岁月从容。"
+      ],
+      [
+        "大路尽头有跃马的喧嚣，那是忙碌的手与筹谋的探讨。",
+        "火星飞舞，麦酒正倒，星空之下，群英正相聚论道。"
+      ],
+      [
+        "任凭这世界如何斗转星移，我们在今日欢笑、劳作与生息。",
+        "待到那蜿蜒的大路再次召唤，便推开大门，去赴下一场奇迹。"
+      ]
+    ]
+  }}
+/>
+
+# 7. References
+
+- [Hermes Bot Mode](https://hermes-agent.nousresearch.com/docs/user-guide/bot-mode)
+- [The Anatomy of an Agent Harness](https://x.com/akshay_pachaar/status/2041146899319971922) by Akshay
