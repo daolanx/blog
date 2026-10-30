@@ -52,12 +52,12 @@ export const zh = {
   ...common,
   siteName: "Dax 的博客",
   meta: {
-    ...common.meta,
-    title: "Dax 的博客",
-    keywords: "前端,全栈,独立开发",
-    slogan: "前端，全栈，独立开发进阶之路",
-    description: "记录从前端，到全栈和独立开发的进阶之路",
-  },
+  ...common.meta,
+  title: "Dax 的博客",
+  keywords: "全栈,独立开发",
+  slogan: "爱技术，爱生活，我的全栈与独立开发手记",
+  description: "爱技术，爱生活，我的全栈与独立开发手记",
+},
 
   pageMeta: {
     archive: {
@@ -78,13 +78,12 @@ export const en = {
   ...common,
   siteName: "Dax's Blog",
   meta: {
-    ...common.meta,
-    keywords: "F2E,Full-Stack,Indie Hacker",
-    title: "Dax's Blog",
-    slogan: "F2E, Full-Stack To Indie Hacker",
-    description:
-      "Tracking the progression from Front-End Engineer to Full-Stack Developer and Indie Hacker.",
-  },
+  ...common.meta,
+  title: "Dax's Blog",
+  keywords: "Full-Stack, Indie Development",
+  slogan: "Love tech, love life. Notes on full-stack & indie dev.",
+  description: "Love tech, love life. Notes on full-stack & indie dev.",
+},
 
   pageMeta: {
     archive: {
